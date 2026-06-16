@@ -1,103 +1,187 @@
-"use client";
+'use client'
 
-import { useState } from "react";
-import Link from "next/link";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { ThemeToggle } from '@/components/theme-toggle'
+import Image from 'next/image'
 
 const links = [
-  { href: "/about", label: "About Us" },
-  { href: "/beliefs", label: "What We Believe" },
-  { href: "/sermons", label: "Sermons" },
-  { href: "/ministries", label: "Ministries" },
-  { href: "/events", label: "Events" },
-  { href: "/prayer", label: "Prayer Requests" },
-  { href: "/contact", label: "Contact" },
-];
+  { href: '/about', label: 'About Us' },
+  // { href: '/beliefs', label: 'What We Believe' },
+  { href: '/sermons', label: 'Sermons' },
+  { href: '/ministries', label: 'Ministries' },
+  { href: '/events', label: 'Events' },
+  // { href: '/prayer', label: 'Prayer Requests' },
+  // { href: '/contact', label: 'Contact' },
+]
 
 export function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gold/15 bg-navy/97 backdrop-blur-md">
-      <div className="mx-auto flex h-[70px] max-w-7xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold font-serif text-lg font-bold text-navy">
-            ✟
+    <nav
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'border-b border-gold/10 bg-navy/98 shadow-lg backdrop-blur-xl'
+          : 'border-b border-gold/15 bg-navy/95 backdrop-blur-md'
+      }`}
+    >
+      {/* Top Utility Bar */}{' '}
+      <div className='hidden lg:block border-b border-gold/10 bg-black/20'>
+        {' '}
+        <div className='mx-auto flex h-9 max-w-7xl items-center justify-end gap-6 px-6'>
+          <Link
+            href='/prayer'
+            className='text-xs tracking-wide text-white/60 transition hover:text-gold-light'
+          >
+            Questions
+          </Link>
+
+          <Link
+            href='/contact'
+            className='text-xs tracking-wide text-white/60 transition hover:text-gold-light'
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
+      {/* Main Navbar */}
+      <div
+        className={`mx-auto flex max-w-7xl items-center justify-between px-6 transition-all duration-300 ${
+          scrolled ? 'h-[66px]' : 'h-[80px]'
+        }`}
+      >
+        {/* Logo */}
+        <Link href='/' className='flex items-center gap-3'>
+          <div
+            className={`flex items-center justify-center rounded-full bg-gold text-navy transition-all duration-300 ${
+              scrolled ? 'h-10 w-10 text-base' : 'h-11 w-11 text-lg'
+            }`}
+          >
+            {/* ✟ */}
+            <Image
+              src='/logo.jpg'
+              alt='Gospel Truth Ethiopia'
+              width={40}
+              height={40}
+              className='rounded-full object-cover'
+            />
           </div>
-          <div className="flex flex-col leading-tight">
-            <span className="font-serif text-sm font-semibold tracking-wide text-gold-light">
+
+          <div className='flex flex-col leading-tight'>
+            <span className='font-serif text-sm font-semibold tracking-wide text-gold-light'>
               Gospel Truth Ethiopia
             </span>
-            <span className="font-ethiopic text-[11px] text-white/60">
+
+            <span className='font-ethiopic text-[11px] text-white/60'>
               የወንጌል እውነት ቤተ ክርስቲያን
             </span>
           </div>
         </Link>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        {/* Desktop Navigation */}
+        <ul className='hidden items-center gap-1 lg:flex'>
           {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="block px-3 py-2 text-[11.5px] font-medium uppercase tracking-wide text-white/80 transition hover:text-gold-light"
+                className='group relative block px-4 py-2 text-[12px] font-medium uppercase tracking-[0.12em] text-white/80 transition-colors duration-300 hover:text-gold-light'
               >
                 {link.label}
+
+                <span className='absolute bottom-0 left-1/2 h-[2px] w-0 -translate-x-1/2 bg-gold-light transition-all duration-300 group-hover:w-full' />
               </Link>
             </li>
           ))}
+
           <li>
             <Link
-              href="/schedule"
-              className="ml-2 rounded bg-gold px-5 py-2 text-[11.5px] font-semibold uppercase tracking-wide text-navy transition hover:bg-gold-light"
+              href='/schedule'
+              className='ml-3 rounded-md bg-gold px-5 py-2.5 text-[12px] font-semibold uppercase tracking-wide text-navy transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20'
             >
               Service Times
             </Link>
           </li>
-          <li>
+
+          <li className='ml-2'>
             <ThemeToggle />
           </li>
         </ul>
 
-        <div className="flex items-center gap-3 lg:hidden">
+        {/* Mobile Controls */}
+        <div className='flex items-center gap-3 lg:hidden'>
           <ThemeToggle />
+
           <button
-            aria-label="Toggle menu"
+            aria-label='Toggle menu'
             onClick={() => setOpen(!open)}
-            className="flex flex-col gap-1.5 p-1"
+            className='relative h-8 w-8'
           >
-            <span className="block h-0.5 w-6 rounded bg-white" />
-            <span className="block h-0.5 w-6 rounded bg-white" />
-            <span className="block h-0.5 w-6 rounded bg-white" />
+            <span
+              className={`absolute left-1 top-2 h-0.5 w-6 bg-white transition-all duration-300 ${
+                open ? 'translate-y-2 rotate-45' : ''
+              }`}
+            />
+
+            <span
+              className={`absolute left-1 top-4 h-0.5 w-6 bg-white transition-all duration-300 ${
+                open ? 'opacity-0' : ''
+              }`}
+            />
+
+            <span
+              className={`absolute left-1 top-6 h-0.5 w-6 bg-white transition-all duration-300 ${
+                open ? '-translate-y-2 -rotate-45' : ''
+              }`}
+            />
           </button>
         </div>
       </div>
-
-      {open && (
-        <div className="border-b border-gold/15 bg-navy/98 px-6 py-4 lg:hidden">
-          <ul className="flex flex-col gap-1">
+      {/* Mobile Menu */}
+      <div
+        className={`overflow-hidden border-gold/15 bg-navy/98 transition-all duration-300 lg:hidden ${
+          open ? 'max-h-[500px] border-b opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <div className='px-6 py-4'>
+          <ul className='flex flex-col gap-1'>
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block py-2.5 text-sm font-medium text-white/80"
+                  className='block rounded-md py-3 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-gold-light'
                 >
                   {link.label}
                 </Link>
               </li>
             ))}
+
             <li>
               <Link
-                href="/schedule"
+                href='/schedule'
                 onClick={() => setOpen(false)}
-                className="mt-2 inline-block rounded bg-gold px-5 py-2 text-sm font-semibold text-navy"
+                className='mt-3 inline-flex rounded-md bg-gold px-5 py-3 text-sm font-semibold text-navy transition hover:bg-gold-light'
               >
                 Service Times
               </Link>
             </li>
           </ul>
         </div>
-      )}
+      </div>
     </nav>
-  );
+  )
 }
