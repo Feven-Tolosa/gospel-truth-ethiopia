@@ -47,7 +47,7 @@ const item = {
 
 export default function BeliefSection() {
   return (
-    <section className='relative overflow-hidden bg-navy px-6 py-24'>
+    <section className='relative overflow-hidden bg-slate-50 px-6 py-24 transition-colors duration-500 dark:bg-navy'>
       {/* Decorative Background */}
       <div className='absolute inset-0'>
         <div className='absolute left-0 top-0 h-72 w-72 rounded-full bg-gold/10 blur-3xl' />
@@ -63,9 +63,11 @@ export default function BeliefSection() {
         >
           <div className='section-label'>What We Believe</div>
 
-          <h2 className='section-title text-white'>Our Doctrinal Foundation</h2>
+          <h2 className='section-title text-slate-900 dark:text-white'>
+            Our Doctrinal Foundation
+          </h2>
 
-          <p className='section-subtitle mb-14 max-w-3xl text-white/60'>
+          <p className='section-subtitle mb-14 max-w-3xl text-slate-600 dark:text-white/60'>
             Standing firmly upon the eternal truth of God’s Word, we embrace the
             historic Christian faith and proclaim the Gospel of Jesus Christ
             with conviction and grace.
@@ -90,7 +92,7 @@ export default function BeliefSection() {
                   y: -8,
                   scale: 1.02,
                 }}
-                className='group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition-all duration-500 hover:border-gold/40 hover:bg-white/[0.06]'
+                className='group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-7 shadow-sm backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-gold/40 hover:shadow-xl dark:border-white/10 dark:bg-white/[0.04] dark:hover:bg-white/[0.06]'
               >
                 {/* Top Gold Line */}
                 <div className='absolute left-0 top-0 h-1 w-0 bg-gold transition-all duration-500 group-hover:w-full' />
@@ -103,7 +105,7 @@ export default function BeliefSection() {
                     <Icon size={28} />
                   </div>
 
-                  <h3 className='mb-2 font-serif text-xl font-semibold text-white'>
+                  <h3 className='mb-2 font-serif text-xl font-semibold text-slate-900 dark:text-white'>
                     {belief.en}
                   </h3>
 
@@ -125,7 +127,7 @@ export default function BeliefSection() {
         >
           <Link
             href='/beliefs'
-            className='group inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-white transition-all duration-300 hover:border-gold hover:bg-gold hover:text-navy'
+            className='group inline-flex items-center gap-2 rounded-full border border-slate-300 px-7 py-3 text-sm font-medium text-slate-900 transition-all duration-300 hover:border-gold hover:bg-gold hover:text-navy dark:border-white/20 dark:text-white'
           >
             Read Our Full Beliefs
             <ArrowRight
