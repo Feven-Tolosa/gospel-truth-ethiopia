@@ -1,3 +1,7 @@
+#local env file for development
+.env*
+.env.local
+
 # dependencies
 /node_modules
 
@@ -15,9 +19,6 @@
 # debug
 npm-debug.log*
 
-# local env files
-.env*.local
-.env
 
 # typescript
 *.tsbuildinfo
