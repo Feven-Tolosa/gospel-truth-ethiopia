@@ -14,17 +14,17 @@ export default function WelcomeSection() {
           className='h-auto w-full object-cover'
         />
 
-        <div className='absolute inset-0 bg-black/20' />
+        <div className='absolute inset-0 bg-navy/20' />
         <div className='absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent' />
         {/* Optional Text Overlay */}
-        <div className='absolute bottom-8 left-1/2 w-full max-w-7xl -translate-x-1/2 px-6'>
+        <div className='absolute bottom-8 left-1/2 w-full max-w-7xl -translate-x-1/2 px-6 hidden md:block'>
           <div className='section-label mb-3 text-white/80'>
             Welcome to Gospel Truth Church
           </div>
 
-          <h1 className='max-w-3xl font-serif text-3xl font-bold text-white sm:text-4xl lg:text-5xl'>
+          <h3 className='max-w-3xl font-serif text-3xl font-bold text-white  md:text-3xl lg:text-5xl'>
             Proclaiming the Truth of God&apos;s Word
-          </h1>
+          </h3>
         </div>
       </div>
 
@@ -34,21 +34,32 @@ export default function WelcomeSection() {
           {/* Left Content */}
           <div>
             <div className='section-label mb-4'>Who We Are</div>
-
             <h2 className='mb-6 font-serif text-3xl font-semibold leading-tight text-white lg:text-4xl'>
               A Church Built on the Word of God
             </h2>
-
             <p className='mb-5 text-base leading-relaxed text-white/75 lg:text-lg'>
               Gospel Truth Church is an evangelical assembly committed to the
               fundamental pillars of Christian faith — the Holy Trinity, the
               divinity and humanity of Jesus Christ, the authority of Scripture,
               the gospel of grace, and the forgiveness of sins.
             </p>
-
             <p className='font-ethiopic text-sm leading-loose text-white/60 lg:text-base'>
-              ወንጌላዊ ጉባኤ ናት - በዋነኞቹ አእማደ እምነቶች፣ በቅድስት ሥላሴ፣ በኢየሱስ ክርስቶስ አምላክነትና
-              ሰውነት፣ በመጽሓፍ ቅዱስ ስልጣን፣ በጸጋው ወንጌል የምታምን።
+              የወንጌል እውነት ቤተክርስቲያን በዋነኞቹ አእማደ እምነቶች፣ በቅድስት ሥላሴ ፣ በኢየሱስ ክርስቶስ
+              አምላክነትና ሰውነት፣ በመጽሓፍ ቅዱስ ስልጣን፣ በጸጋው ወንጌል፣ በኃጢአት ስርየት፣ በዳግም ምጽአት ፣
+              በሚመጣው ፍርድ የምታምን ወንጌላዊት ጉባኤ ናት::
+            </p>
+            <p className='font-ethiopic text-sm leading-loose text-white/60 lg:text-base'>
+              {' '}
+              በደቡብ፤ በደቡብ ምዕራብ፤ እና በምዕራብ ኢትዮጵያ አጥቢያ ጉባኤዎች ያሏት ናት፡፡
+            </p>
+            <p className='font-ethiopic text-sm leading-loose text-white/60 lg:text-base'>
+              ቤተ ክርስቲያኒቱ በሽማግሌዎች አስተዳደር የምትመራ ስትሆን ፤ የቃሉ አገልጋዮችና የመንፈሳዊ ዘርፍ አባላት
+              ሁሉ በሽማግሌዎች አመራር ስር የሚመሩ ናቸው፡፡
+            </p>
+            <p className='font-ethiopic text-sm leading-loose text-white/60 lg:text-base'>
+              የቤተ ክርስቲያኒቱ ዋና አላማም ወንጌልን ያለፍርሃት በግልጽነት መስበክና ፤ ክርስቶስን ማዕከል ያደረጉና
+              እሱን ብቻ የሚገልጡና የሚያከብሩ፤ የአባቶቻችንን አስተምህሮ መከራን በመቀበልና ፤ዋጋን በመክፈል ለሰው
+              ልጆች ማድረስ ነው፡፡ 2ቆሮንቶስ 4፡1_18
             </p>
           </div>
 
