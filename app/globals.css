@@ -19,11 +19,11 @@ body {
 }
 
 .section-label::before {
-  content: "";
+  content: '';
   display: block;
-  width: 24px;
+  width: 20px;
   height: 2px;
-  background-color: theme("colors.gold.DEFAULT");
+  background-color: theme('colors.gold.DEFAULT');
 }
 
 .section-title {
