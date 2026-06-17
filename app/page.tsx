@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { weeklySchedule } from '@/lib/schedule-data'
 import HeroSection from '@/components/home/HeroSection'
+import WelcomeSection from '@/components/home/WelcomeSection'
 
 export default function HomePage() {
   const featured = weeklySchedule.filter((s) =>
@@ -10,49 +11,7 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
-
-      {/* WELCOME */}
-      <section className='bg-navy px-6 py-16'>
-        <div className='mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1fr_auto_1fr]'>
-          <div className='text-white'>
-            <div className='section-label'>Who We Are</div>
-            <h2 className='mb-4 font-serif text-2xl font-semibold leading-snug text-white sm:text-3xl'>
-              A Church Built on the Word of God
-            </h2>
-            <p className='mb-4 leading-relaxed text-white/70'>
-              Gospel Truth Church is an evangelical assembly committed to the
-              fundamental pillars of Christian faith — the Holy Trinity, the
-              divinity and humanity of Jesus Christ, the authority of Scripture,
-              the gospel of grace, and the forgiveness of sins.
-            </p>
-            <p className='font-ethiopic text-sm leading-loose text-white/55'>
-              ወንጌላዊ ጉባኤ ናት - በዋነኞቹ አእማደ እምነቶች፣ በቅድስት ሥላሴ፣ በኢየሱስ ክርስቶስ አምላክነትና
-              ሰውነት፣ በመጽሓፍ ቅዱስ ስልጣን፣ በጸጋው ወንጌል የምታምን።
-            </p>
-          </div>
-          <div className='hidden h-48 w-px bg-gradient-to-b from-transparent via-gold to-transparent opacity-40 lg:block' />
-          <div className='grid grid-cols-3 gap-6 lg:grid-cols-1 lg:gap-8'>
-            <div className='text-center'>
-              <div className='font-serif text-4xl font-bold text-gold'>3+</div>
-              <div className='text-xs font-medium uppercase tracking-wider text-white/50'>
-                Regions Served
-              </div>
-            </div>
-            <div className='text-center'>
-              <div className='font-serif text-4xl font-bold text-gold'>∞</div>
-              <div className='text-xs font-medium uppercase tracking-wider text-white/50'>
-                Lives Changed
-              </div>
-            </div>
-            <div className='text-center'>
-              <div className='font-serif text-4xl font-bold text-gold'>1</div>
-              <div className='text-xs font-medium uppercase tracking-wider text-white/50'>
-                Gospel, Proclaimed Boldly
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <WelcomeSection />
 
       {/* SCHEDULE PREVIEW */}
       <section className='border-t-[3px] border-gold bg-gold-pale px-6 py-20 dark:bg-navy-mid'>
