@@ -1,44 +1,54 @@
-# Gospel Truth Church Ethiopia — Next.js Site
+# Gospel Truth Church Ethiopia
 
-A Next.js 14 (App Router) + TypeScript + Tailwind CSS site for Gospel Truth
-Church Ethiopia, with light/dark theme support via `next-themes`.
+**የወንጌል እውነት ቤተ ክርስቲያን**
 
-## Setup
+A modern church website built to proclaim the truth of God's Word, connect believers, and make Gospel-centered resources accessible to everyone.
+
+## ✨ Features
+
+* Responsive modern design
+* Light & Dark mode
+* Dynamic YouTube sermon integration
+* Church ministries and events
+* Weekly service schedule
+* Prayer requests and contact pages
+* Fast, SEO-friendly performance
+
+## 🛠 Built With
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* YouTube Data API
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/Feven-Tolosa/gospel-truth-ethiopia.git
+
+cd gospel-truth-church
+
 npm install
+
 npm run dev
 ```
 
-Visit http://localhost:3000
+Open `http://localhost:3000`
 
-## Pages included
+## 🎯 Our Mission
 
-- `/` — Homepage (hero, welcome, schedule preview, sermons preview, beliefs preview, CTA)
-- `/about` — About Us
-- `/beliefs` — What We Believe (full doctrinal statements)
-- `/sermons` — Sermon library preview (links to YouTube/Telegram)
-- `/ministries` — Ministries overview
-- `/events` — Upcoming events
-- `/schedule` — Full weekly service schedule
-- `/prayer` — Prayer request form
-- `/contact` — Contact info
+> To faithfully proclaim the Gospel of Jesus Christ, make disciples, and glorify God through the teaching of His Word.
 
-## Structure
+## 📍 Location
 
-- `app/` — pages (App Router)
-- `components/` — Navbar, Footer, ThemeToggle, PrayerForm, etc.
-- `lib/` — shared data (schedule, beliefs)
+Jimma, Ethiopia
 
-## Customize
+## 🙏 Scripture
 
-- Edit `lib/schedule-data.ts` to change service times.
-- Edit `lib/beliefs-data.ts` to change doctrinal statements.
-- Replace placeholder sermon data in `app/sermons/page.tsx` and `app/page.tsx`.
-- Wire up `components/prayer-form.tsx` to a real backend (e.g. Formspree, a serverless function, or your own API route) — it currently only shows a confirmation message.
-- Add a real pastor photo and church photos under `public/` and reference them with `next/image`.
+> "Preach the word; be ready in season and out of season."
+> — 2 Timothy 4:2
 
-## Theme
+---
 
-Light/dark mode is handled by `next-themes`, toggled via the button in the
-navbar. Default theme is `light`; it also respects system preference.
+**Soli Deo Gloria**
