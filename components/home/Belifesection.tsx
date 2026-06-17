@@ -1,0 +1,140 @@
+'use client'
+
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { BookOpen, Cross, ShieldCheck, ArrowRight } from 'lucide-react'
+
+const beliefs = [
+  {
+    en: 'The Holy Trinity',
+    am: 'ቅድስት ሥላሴ',
+    icon: ShieldCheck,
+  },
+  {
+    en: 'The Divinity of Christ',
+    am: 'የኢየሱስ ክርስቶስ አምላክነት',
+    icon: Cross,
+  },
+  {
+    en: 'Authority of Scripture',
+    am: 'የመጽሓፍ ቅዱስ ስልጣን',
+    icon: BookOpen,
+  },
+]
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+}
+
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
+}
+
+export default function BeliefSection() {
+  return (
+    <section className='relative overflow-hidden bg-navy px-6 py-24'>
+      {/* Decorative Background */}
+      <div className='absolute inset-0'>
+        <div className='absolute left-0 top-0 h-72 w-72 rounded-full bg-gold/10 blur-3xl' />
+        <div className='absolute bottom-0 right-0 h-96 w-96 rounded-full bg-gold/5 blur-3xl' />
+      </div>
+
+      <div className='relative mx-auto max-w-7xl'>
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className='section-label'>What We Believe</div>
+
+          <h2 className='section-title text-white'>Our Doctrinal Foundation</h2>
+
+          <p className='section-subtitle mb-14 max-w-3xl text-white/60'>
+            Standing firmly upon the eternal truth of God’s Word, we embrace the
+            historic Christian faith and proclaim the Gospel of Jesus Christ
+            with conviction and grace.
+          </p>
+        </motion.div>
+
+        <motion.div
+          variants={container}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: true }}
+          className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'
+        >
+          {beliefs.map((belief) => {
+            const Icon = belief.icon
+
+            return (
+              <motion.div
+                key={belief.en}
+                variants={item}
+                whileHover={{
+                  y: -8,
+                  scale: 1.02,
+                }}
+                className='group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition-all duration-500 hover:border-gold/40 hover:bg-white/[0.06]'
+              >
+                {/* Top Gold Line */}
+                <div className='absolute left-0 top-0 h-1 w-0 bg-gold transition-all duration-500 group-hover:w-full' />
+
+                {/* Glow */}
+                <div className='absolute inset-0 bg-gradient-to-br from-gold/0 via-gold/0 to-gold/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100' />
+
+                <div className='relative'>
+                  <div className='mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-gold/10 text-gold'>
+                    <Icon size={28} />
+                  </div>
+
+                  <h3 className='mb-2 font-serif text-xl font-semibold text-white'>
+                    {belief.en}
+                  </h3>
+
+                  <p className='font-ethiopic text-sm text-gold/80'>
+                    {belief.am}
+                  </p>
+                </div>
+              </motion.div>
+            )
+          })}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className='mt-12 flex justify-center'
+        >
+          <Link
+            href='/beliefs'
+            className='group inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-white transition-all duration-300 hover:border-gold hover:bg-gold hover:text-navy'
+          >
+            Read Our Full Beliefs
+            <ArrowRight
+              size={16}
+              className='transition-transform duration-300 group-hover:translate-x-1'
+            />
+          </Link>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
