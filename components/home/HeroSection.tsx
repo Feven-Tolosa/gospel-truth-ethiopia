@@ -19,7 +19,7 @@ export default function HeroSection({
   backgroundImage = 'https://images.unsplash.com/photo-1438232992991-995b671e49ea?w=2000&q=80',
 }: HeroSectionProps) {
   return (
-    <section className='relative flex h-screen min-h-[600px] items-center justify-center overflow-hidden bg-navy mt-16'>
+    <section className='relative flex h-screen min-h-[600px] items-center justify-center overflow-hidden bg-navy mt-12'>
       <div
         className='absolute inset-0'
         style={{

@@ -10,7 +10,7 @@ const links = [
   // { href: '/beliefs', label: 'What We Believe' },
   { href: '/sermons', label: 'Sermons' },
   { href: '/ministries', label: 'Ministries' },
-  { href: '/events', label: 'Events' },
+  // { href: '/events', label: 'Events' },
   // { href: '/prayer', label: 'Prayer Requests' },
   // { href: '/contact', label: 'Contact' },
 ]
@@ -35,7 +35,7 @@ export function Navbar() {
     <nav
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-gold/10 bg-navy/98 shadow-lg backdrop-blur-xl'
+          ? 'border-b border-gold/10 bg-navy/98  shadow-lg backdrop-blur-md'
           : 'border-b border-gold/15 bg-navy/95 backdrop-blur-md'
       }`}
     >
