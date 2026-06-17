@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { Phone, MapPin, Globe, Send, ArrowRight } from 'lucide-react'
 
 export function Footer() {
@@ -64,45 +63,21 @@ export function Footer() {
             </h4>
 
             <ul className='space-y-3'>
-              <li>
-                <a
-                  href='https://gospeltruthethiopia.com'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-sm text-slate-600 transition hover:text-gold dark:text-white/50'
-                >
-                  Books by Dawit Fassil
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href='https://t.me/DawitFassilMinistries'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-sm text-slate-600 transition hover:text-gold dark:text-white/50'
-                >
-                  Audio Sermons
-                </a>
-              </li>
-
-              <li>
-                <Link
-                  href='/prayer'
-                  className='text-sm text-slate-600 transition hover:text-gold dark:text-white/50'
-                >
-                  Prayer Requests
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href='/events'
-                  className='text-sm text-slate-600 transition hover:text-gold dark:text-white/50'
-                >
-                  Events Calendar
-                </Link>
-              </li>
+              {[
+                ['Books', '/books'],
+                ['Audio Sermons', 'https://t.me/DawitFassilMinistry'],
+                ['Prayer Requests', '/prayer'],
+                ['Events Calendar', '/events'],
+              ].map(([label, href]) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className='text-sm text-slate-600 transition hover:text-gold dark:text-white/50 dark:hover:text-gold'
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -129,7 +104,7 @@ export function Footer() {
                 +251 906 202 626
               </a>
 
-              <div className='flex items-center gap-3 text-slate-600 dark:text-white/50'>
+              <div className='flex items-center gap-3 text-slate-600 dark:text-white/50 hover:text-gold'>
                 <MapPin size={16} />
                 Jimma, Ethiopia
               </div>

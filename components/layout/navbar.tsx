@@ -7,12 +7,8 @@ import Image from 'next/image'
 
 const links = [
   { href: '/about', label: 'About Us' },
-  // { href: '/beliefs', label: 'What We Believe' },
   { href: '/sermons', label: 'Sermons' },
   { href: '/ministries', label: 'Ministries' },
-  // { href: '/events', label: 'Events' },
-  // { href: '/prayer', label: 'Prayer Requests' },
-  // { href: '/contact', label: 'Contact' },
 ]
 
 export function Navbar() {
@@ -39,28 +35,9 @@ export function Navbar() {
           : 'border-b border-gold/15 bg-navy/95 backdrop-blur-md'
       }`}
     >
-      {/* Top Utility Bar */}{' '}
-      <div className='hidden lg:block border-b border-gold/10 bg-black/20'>
-        {' '}
-        <div className='mx-auto flex h-9 max-w-7xl items-center justify-end gap-6 px-6'>
-          <Link
-            href='/prayer'
-            className='text-xs tracking-wide text-white/60 transition hover:text-gold-light'
-          >
-            Questions
-          </Link>
-
-          <Link
-            href='/contact'
-            className='text-xs tracking-wide text-white/60 transition hover:text-gold-light'
-          >
-            Contact
-          </Link>
-        </div>
-      </div>
       {/* Main Navbar */}
       <div
-        className={`mx-auto flex max-w-7xl items-center justify-between px-6 transition-all duration-300 ${
+        className={`mx-auto flex max-w-7xl items-center justify-between px-6 transition-all duration-300 border-gold/10 bg-black/20 ${
           scrolled ? 'h-[66px]' : 'h-[80px]'
         }`}
       >
