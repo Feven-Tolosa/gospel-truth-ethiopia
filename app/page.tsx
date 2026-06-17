@@ -10,49 +10,6 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
-      {/* HERO */}
-      <section className='relative flex h-screen min-h-[600px] items-center justify-center overflow-hidden bg-navy'>
-        <div
-          className='absolute inset-0'
-          style={{
-            backgroundImage:
-              "linear-gradient(135deg, rgba(13,27,42,0.92) 0%, rgba(13,27,42,0.75) 50%, rgba(13,27,42,0.88) 100%), url('https://images.unsplash.com/photo-1438232992991-995b671e49ea?w=1800&q=80')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <div className='relative z-10 max-w-3xl px-8 text-center'>
-          <div className='section-label justify-center before:hidden'>
-            <span className='block h-px w-8 bg-gold/60' />
-            Jimma, Ethiopia
-            <span className='block h-px w-8 bg-gold/60' />
-          </div>
-          <h1 className='mb-2 font-ethiopic text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl'>
-            የወንጌል እውነት ቤተ ክርስቲያን
-          </h1>
-          <p className='mb-7 font-serif text-lg italic text-gold-light sm:text-xl md:text-2xl'>
-            Gospel Truth Church — Ethiopia
-          </p>
-          <blockquote className='mx-auto mb-9 max-w-xl border-l-2 border-gold pl-5 text-left font-serif text-base italic leading-relaxed text-white/75 sm:text-lg'>
-            &ldquo;ክርስቶስ ኢየሱስ ጌታ ሲሆን እኛ ራሳችንን ሎሌዎቻችሁ አድርገን ስለ ኢየሱስ
-            እናስተምራለን።&rdquo;
-            <cite className='mt-2 block font-sans text-sm font-medium not-italic text-gold'>
-              2 ቆሮንቶስ 4፡5
-            </cite>
-          </blockquote>
-          <div className='flex flex-wrap justify-center gap-4'>
-            <Link href='/schedule' className='btn-primary'>
-              Join Us Sunday
-            </Link>
-            <Link
-              href='/sermons'
-              className='btn-outline border-white/35 text-white hover:border-white'
-            >
-              Watch Sermons
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* WELCOME */}
       <section className='bg-navy px-6 py-16'>
