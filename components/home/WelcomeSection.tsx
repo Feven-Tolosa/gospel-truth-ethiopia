@@ -18,7 +18,6 @@ export default function WelcomeSection() {
   return (
     <section className='relative overflow-hidden bg-navy'>
       {/* Background Accent */}
-      <div className='absolute left-0 top-1/3 h-72 w-72 rounded-full bg-gold/10 blur-3xl' />
       <div className='absolute right-0 bottom-0 h-96 w-96 rounded-full bg-gold/5 blur-3xl' />
 
       {/* Hero Banner */}
@@ -60,7 +59,7 @@ export default function WelcomeSection() {
       </div>
 
       {/* Content */}
-      <div className='mx-auto max-w-7xl px-6 py-16 lg:py-24'>
+      <div className='mx-auto max-w-7xl px-6 py-16 lg:py-24 bg-gold-pale dark:bg-navy'>
         <div className='grid gap-12 lg:grid-cols-[1fr_auto_320px] lg:gap-16'>
           {/* Left Content */}
           <motion.div
@@ -71,12 +70,12 @@ export default function WelcomeSection() {
           >
             <div className='section-label mb-4'>Who We Are</div>
 
-            <h2 className='mb-6 font-serif text-3xl font-semibold leading-tight text-white lg:text-4xl'>
+            <h2 className='mb-6 section-title font-serif text-3xl font-semibold leading-tight text-white lg:text-4xl'>
               A Church Built on the Word of God
             </h2>
 
             <motion.p
-              className='mb-5 text-base leading-relaxed text-white/75 lg:text-lg'
+              className='mb-5 max-w-2xl section-subtitle'
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
@@ -90,18 +89,7 @@ export default function WelcomeSection() {
             </motion.p>
 
             <motion.p
-              className='mb-5 text-base leading-relaxed text-white/75 lg:text-lg'
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              It has local congregations in the South, Southwest, and West
-              Ethiopia.
-            </motion.p>
-
-            <motion.p
-              className='mb-5 text-base leading-relaxed text-white/75 lg:text-lg'
+              className='mb-5 max-w-2xl section-subtitle'
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
@@ -113,7 +101,17 @@ export default function WelcomeSection() {
             </motion.p>
 
             <motion.p
-              className='mb-5 text-base leading-relaxed text-white/75 lg:text-lg'
+              className='mb-5 max-w-2xl section-subtitle'
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              It has local congregations in the South, Southwest, and West
+              Ethiopia.
+            </motion.p>
+            <motion.p
+              className='max-w-2xl section-subtitle'
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -135,7 +133,7 @@ export default function WelcomeSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className='grid grid-cols-3 gap-6 border-t border-white/10 pt-8 lg:grid-cols-1 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0'
+            className='grid grid-cols-3 gap-6 border-t border-l-gold-light dark:border-white/10  pt-8 lg:grid-cols-1 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0 '
           >
             {[
               {
