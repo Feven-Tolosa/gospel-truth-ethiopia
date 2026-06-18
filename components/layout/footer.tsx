@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { Phone, MapPin, Globe, Send, ArrowRight } from 'lucide-react'
+import { SlSocialFacebook } from 'react-icons/sl'
 
 export function Footer() {
   return (
@@ -130,23 +131,23 @@ export function Footer() {
           </p>
 
           <div className='flex gap-3'>
-            <a
+            <Link
               href='https://www.facebook.com/Dawit-Fassil-Ministry-1873139229468315/'
               target='_blank'
               rel='noopener noreferrer'
               className='rounded-full border border-slate-200 p-2 transition hover:border-gold hover:bg-gold/10 dark:border-white/10'
             >
-              <Send size={18} />
-            </a>
+              <SlSocialFacebook size={18} />
+            </Link>
 
-            <a
-              href='https://t.me/DawitFassilMinistries'
+            <Link
+              href='https://t.me/DawitFassilMinistry'
               target='_blank'
               rel='noopener noreferrer'
               className='rounded-full border border-slate-200 p-2 transition hover:border-gold hover:bg-gold/10 dark:border-white/10'
             >
               <Send size={18} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
