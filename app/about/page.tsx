@@ -23,29 +23,24 @@ export default function AboutPage() {
 
         <div className='absolute inset-0 bg-navy/20' />
         <div className='absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent' />
-
+      </div>
+      <section className='bg-navy px-4 py-16 text-center'>
         {/* Banner Text */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className='absolute bottom-8 left-1/6 hidden w-full max-w-7xl -translate-x-1/2 px-6 md:block'
+          className='absolute bottom-8 text-center w-full max-w-7xl -translate-x-1/2 px-6 md:block'
         >
-          <div className='section-label mb-3 text-white/80'>
-            Welcome to Gospel Truth Church
-          </div>
+          <p className=' mb-3  text-gold font-serif '>
+            - Welcome to Gospel Truth Church -
+          </p>
 
-          <h3 className='max-w-3xl font-serif text-3xl font-bold text-white md:text-3xl lg:text-5xl'>
+          <h3 className='mb-3 text-white/80 font-serif text-3xl font-bold text-white md:text-3xl lg:text-5xl'>
             Proclaiming the Truth of God&apos;s Word
           </h3>
         </motion.div>
-      </div>
-      <section className='bg-navy px-4 py-16 text-center'>
-        <div className='section-label justify-center'>About Us</div>
-        <h1 className='font-serif text-3xl font-bold text-white sm:text-4xl'>
-          Who We Are
-        </h1>
       </section>
 
       <section className='px-4 py-16'>
