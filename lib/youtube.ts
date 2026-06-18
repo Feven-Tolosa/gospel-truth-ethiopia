@@ -46,11 +46,12 @@ export async function getLatestSermons(maxResults = 12): Promise<Sermon[]> {
   )
 
   if (!response.ok) {
-    const errorText = await response.text()
+    const error = await response.text()
 
-    console.error('YouTube API Error:', response.status, errorText)
+    console.error('YouTube Response Status:', response.status)
+    console.error('YouTube Response:', error)
 
-    return []
+    throw new Error(`Failed to fetch sermons (${response.status})`)
   }
 
   const data = await response.json()
