@@ -18,6 +18,10 @@ function shuffleArray<T>(array: T[]): T[] {
 export default async function SermonsPreview() {
   const sermons = await getLatestSermons(50)
 
+  if (!sermons.length) {
+    return null
+  }
+
   const shuffled = shuffleArray(sermons)
 
   const featured = shuffled[0]
@@ -25,3 +29,14 @@ export default async function SermonsPreview() {
 
   return <SermonsPreviewClient featured={featured} recent={recent} />
 }
+
+// export default async function SermonsPreview() {
+//   const sermons = await getLatestSermons(50)
+
+//   const shuffled = shuffleArray(sermons)
+
+//   const featured = shuffled[0]
+//   const recent = shuffled.slice(1, 7)
+
+//   return <SermonsPreviewClient featured={featured} recent={recent} />
+// }
