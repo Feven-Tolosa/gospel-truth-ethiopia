@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import type { Sermon } from '@/lib/youtube'
-import { useEffect, useState } from 'react'
 interface Props {
   featured: Sermon
   recent: Sermon[]
@@ -36,10 +35,6 @@ export default function SermonsPreviewClient({ featured, recent }: Props) {
               Ministries.
             </p>
           </div>
-
-          {/* <Link href='/sermons' className='btn-primary mt-2 whitespace-nowrap'>
-            View All Sermons
-          </Link> */}
         </motion.div>
 
         {/* Featured Video */}
@@ -54,7 +49,7 @@ export default function SermonsPreviewClient({ featured, recent }: Props) {
             <div className='relative aspect-video overflow-hidden'>
               <iframe
                 className='h-full w-full'
-                src={`https://www.youtube.com/embed/${featured.id}`}
+                src={`https://www.youtube.com/embed/${featured.id}?autoplay=1&mute=1&rel=0&modestbranding=1`}
                 title={featured.title}
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                 allowFullScreen
@@ -77,14 +72,14 @@ export default function SermonsPreviewClient({ featured, recent }: Props) {
               </p>
 
               <div className='mt-8'>
-                <a
+                <Link
                   href={`https://www.youtube.com/watch?v=${featured.id}`}
                   target='_blank'
                   rel='noopener noreferrer'
                   className='btn-primary'
                 >
                   Watch on YouTube
-                </a>
+                </Link>
               </div>
             </div>
           </div>
