@@ -8,7 +8,7 @@ import Image from 'next/image'
 const links = [
   { href: '/about', label: 'About Us' },
   { href: '/playlists', label: 'Sermons' },
-  { href: '/ministries', label: 'Ministries' },
+  { href: '/books', label: 'Books' },
 ]
 
 export function Navbar() {

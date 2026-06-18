@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function AboutPage() {
   return (
@@ -72,6 +73,12 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+      <Link
+        href='/ministries'
+        className='mx-auto mb-14 block w-fit rounded-lg border border-gold p-6 font-serif font-bold text-white transition-all duration-300 hover:bg-gold sm:text-lg'
+      >
+        Ministries
+      </Link>
     </main>
   )
 }

@@ -67,13 +67,13 @@ export default function BooksPage() {
 
                   {/* Actions */}
                   <div className='mt-6 flex gap-3'>
-                    <Link
+                    <a
                       href={book.pdf}
                       target='_blank'
                       className='flex-1 rounded-lg border border-gold px-4 py-2 text-center text-sm font-medium text-gold transition hover:bg-gold hover:text-navy'
                     >
                       Read
-                    </Link>
+                    </a>
 
                     <a
                       href={book.pdf}
