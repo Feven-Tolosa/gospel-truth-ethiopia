@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const links = [
   { href: '/about', label: 'About Us' },
-  { href: '/sermons', label: 'Sermons' },
+  { href: '/playlists', label: 'Sermons' },
   { href: '/ministries', label: 'Ministries' },
 ]
 

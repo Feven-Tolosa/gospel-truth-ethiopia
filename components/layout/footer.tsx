@@ -42,7 +42,7 @@ export function Footer() {
               {[
                 ['About Us', '/about'],
                 ['What We Believe', '/beliefs'],
-                ['Sermons', '/sermons'],
+                ['Sermons', '/playlists'],
                 ['Service Times', '/schedule'],
               ].map(([label, href]) => (
                 <li key={href}>

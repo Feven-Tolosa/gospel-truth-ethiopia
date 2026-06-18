@@ -53,7 +53,7 @@ export default function HeroSection({
             Service Times
           </Link>
           <Link
-            href='/sermons'
+            href='/playlists'
             className='rounded-md border border-white/25 px-7 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/5'
           >
             Watch Sermons
