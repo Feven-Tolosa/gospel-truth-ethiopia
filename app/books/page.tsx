@@ -99,8 +99,10 @@ export default function BooksPage() {
           </h2>
 
           <p className='mt-4 text-neutral-600 dark:text-neutral-400'>
-            We regularly add new biblical resources, discipleship materials, and
-            study guides to help believers mature in Christ.
+            Dive into our collection of biblical resources and strengthen your
+            faith. Whether you're seeking to deepen your understanding of
+            Scripture or looking for practical guidance, our resources are here
+            to support your spiritual journey.
           </p>
         </div>
       </section>
