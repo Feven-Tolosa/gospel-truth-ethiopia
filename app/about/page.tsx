@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function AboutPage() {
   return (
     <main className='pt-[70px]'>
-      <div className='relative w-full overflow-hidden'>
+      <div className='relative w-full overflow-hidden pt-12'>
         <motion.div
           initial={{ scale: 1.08 }}
           animate={{ scale: 1 }}
@@ -32,13 +32,13 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className='absolute bottom-8 text-center w-full max-w-7xl -translate-x-1/2 px-6 md:block'
+          className='absolute bottom-8 text-center w-full max-w-7xl -translate-x-1/2 px-6 md:block pt-12'
         >
-          <p className=' mb-3  text-gold font-serif '>
+          <p className=' py-3  text-gold font-serif '>
             - Welcome to Gospel Truth Church -
           </p>
 
-          <h3 className='mb-3 text-white/80 font-serif text-3xl font-bold text-white md:text-3xl lg:text-5xl'>
+          <h3 className='pb-16 text-white/80 font-serif text-3xl font-bold text-white sm:text-1xl md:text-3xl lg:text-5xl'>
             Proclaiming the Truth of God&apos;s Word
           </h3>
         </motion.div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
       </section>
       <Link
         href='/ministries'
-        className='mx-auto mb-14 block w-fit rounded-lg border border-gold p-6 font-serif font-bold text-white transition-all duration-300 hover:bg-gold sm:text-lg'
+        className='mx-auto mb-14 block w-fit rounded-lg border border-gold p-6 font-serif font-bold text-navy-light dark:text-white transition-all duration-300 hover:bg-gold sm:text-lg '
       >
         Ministries
       </Link>
