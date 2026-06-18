@@ -5,6 +5,10 @@ export interface Sermon {
   publishedAt: string
 }
 
+interface Props {
+  featured: Sermon
+  recent: Sermon[]
+}
 export interface PlaylistVideo {
   id: string
   title: string

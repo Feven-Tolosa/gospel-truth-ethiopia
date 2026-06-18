@@ -4,17 +4,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import type { Sermon } from '@/lib/youtube'
-
+import { useEffect, useState } from 'react'
 interface Props {
-  sermons: Sermon[]
+  featured: Sermon
+  recent: Sermon[]
 }
 
-export default function SermonsPreviewClient({ sermons }: Props) {
-  if (!sermons.length) return null
-
-  const featured = sermons[0]
-  const recent = sermons.slice(1)
-
+export default function SermonsPreviewClient({ featured, recent }: Props) {
   return (
     <section className='relative overflow-hidden bg-gold-pale px-6 py-24 dark:bg-navy-mid'>
       {/* Background Glow */}
