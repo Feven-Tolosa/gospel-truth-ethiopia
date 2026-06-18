@@ -9,7 +9,7 @@ export default function VisitSection() {
     <section className='relative overflow-hidden bg-slate-50 px-6 py-24 transition-colors duration-500 dark:bg-navy'>
       {/* Background Effects */}
       <div className='absolute inset-0 overflow-hidden'>
-        <div className='absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-gold/10 blur-3xl' />
+        {/* <div className='absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-gold/10 blur-3xl' /> */}
 
         <div className='absolute left-20 top-20 h-32 w-32 rounded-full border border-gold/10' />
 
@@ -28,10 +28,6 @@ export default function VisitSection() {
         <h2 className='mb-3 font-serif text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl'>
           You Are Welcome Here
         </h2>
-        {/* 
-        <p className='mb-5 font-ethiopic text-xl text-gold'>
-          ወደ እኛ እንኳን በደህና መጣችሁ
-        </p> */}
 
         <p className='mx-auto mb-10 max-w-2xl leading-relaxed text-slate-600 dark:text-white/65'>
           Whether you are exploring Christianity, seeking a church home, or

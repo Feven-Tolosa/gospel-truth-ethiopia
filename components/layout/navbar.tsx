@@ -84,15 +84,6 @@ export function Navbar() {
             </li>
           ))}
 
-          <li>
-            <Link
-              href='/schedule'
-              className='ml-3 rounded-md bg-gold px-5 py-2.5 text-[12px] font-semibold uppercase tracking-wide text-navy transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20'
-            >
-              Service Times
-            </Link>
-          </li>
-
           <li className='ml-2'>
             <ThemeToggle />
           </li>

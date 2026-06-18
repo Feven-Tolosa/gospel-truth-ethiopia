@@ -50,7 +50,7 @@ export default function HeroSection({
         </blockquote>
         <div className='flex flex-wrap justify-center gap-4'>
           <Link href='/schedule' className='btn-primary'>
-            Join Us Sunday
+            Service Times
           </Link>
           <Link
             href='/sermons'
