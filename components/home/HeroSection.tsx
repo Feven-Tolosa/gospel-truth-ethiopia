@@ -49,12 +49,17 @@ export default function HeroSection({
           </cite>
         </blockquote>
         <div className='flex flex-wrap justify-center gap-4'>
-          <Link href='/schedule' className='btn-primary'>
+          <Link
+            href='/schedule'
+            className='rounded-md border border-white/25 px-7 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/5'
+          >
             Service Times
           </Link>
           <Link
             href='/playlists'
-            className='rounded-md border border-white/25 px-7 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/5'
+            className='
+            
+            btn-primary  hover:text-white border border-white/25 hover:bg-white/5'
           >
             Watch Sermons
           </Link>
