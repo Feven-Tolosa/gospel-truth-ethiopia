@@ -42,8 +42,8 @@ export default function HeroSection({
           Gospel Truth Church — Ethiopia
         </p>
         <blockquote className='mx-auto mb-9 max-w-xl border-l-2 border-gold pl-5 text-left font-serif text-base italic leading-relaxed text-white/75 sm:text-lg'>
-          &ldquo;ክርስቶስ ኢየሱስ ጌታ ሲሆን እኛ ራሳችንን ሎሌዎቻችሁ አድርገን ስለ ኢየሱስ
-          እናስተምራለን።&rdquo;
+          &ldquo; ክርስቶስ ኢየሱስን ጌታ እንደ ሆነ እንጂ ራሳችንን አንሰብክምና፥ ስለ ኢየሱስም ራሳችንን ለእናንተ
+          ባሪያዎች እናደርጋለን።&rdquo;
           <cite className='mt-2 block font-sans text-sm font-medium not-italic text-gold'>
             2 ቆሮንቶስ 4፡5
           </cite>
