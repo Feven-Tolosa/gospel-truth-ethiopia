@@ -162,7 +162,7 @@ export default function WelcomeSection() {
                   {stat.number}
                 </div>
 
-                <div className='mt-2 text-xs font-medium uppercase tracking-[0.2em] text-white/50'>
+                <div className='mt-2 font-medium uppercase  section-subtitle'>
                   {stat.label}
                 </div>
               </motion.div>
