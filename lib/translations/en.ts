@@ -143,4 +143,18 @@ export const en: Translation = {
     emptyTitle: 'No playlists available',
     emptyDescription: 'There are currently no sermon series to display.',
   },
+  books: {
+    label: 'Books & Resources',
+    title: 'Biblical Resources',
+    description:
+      "Explore a collection of Christ-centered books, study guides, and biblical resources designed to strengthen your faith and deepen your understanding of God's Word.",
+
+    resource: 'Resource',
+    read: 'Read',
+    download: 'Download',
+
+    ctaTitle: "Grow in God's Word",
+    ctaDescription:
+      "Dive into our collection of biblical resources and strengthen your faith. Whether you're seeking to deepen your understanding of Scripture or looking for practical guidance, our resources are here to support your spiritual journey.",
+  },
 }

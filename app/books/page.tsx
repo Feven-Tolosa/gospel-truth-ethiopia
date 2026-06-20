@@ -1,29 +1,31 @@
+'use client'
+
 import Image from 'next/image'
-import Link from 'next/link'
 import { Download, BookOpen } from 'lucide-react'
 import { books } from '@/lib/books-data'
-
-export const metadata = {
-  title: 'Books & Resources | Gospel Truth Church Ethiopia',
-  description:
-    'Download biblical books, study guides, and Christian resources.',
-}
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
+// export const metadata = {
+//   title: 'Books & Resources | Gospel Truth Church Ethiopia',
+//   description:
+//     'Download biblical books, study guides, and Christian resources.',
+// }
 
 export default function BooksPage() {
+  const { locale } = useLanguage()
+  const t = translations[locale]
   return (
     <main className='pt-[70px]'>
       {/* Hero Section */}
       <section className='bg-navy px-6 py-20 text-center'>
-        <div className='section-label justify-center'>Books & Resources</div>
+        <div className='section-label justify-center'>{t.books.label}</div>
 
         <h1 className='mt-4 font-serif text-4xl font-bold text-white sm:text-5xl'>
-          Biblical Resources
+          {t.books.title}
         </h1>
 
         <p className='mx-auto mt-4 max-w-2xl text-white/70'>
-          Explore a growing collection of Christ-centered books, study guides,
-          and biblical resources designed to strengthen your faith and deepen
-          your understanding of God's Word.
+          {t.books.description}
         </p>
       </section>
 
@@ -51,7 +53,7 @@ export default function BooksPage() {
                   <div className='mb-2 flex items-center gap-2 text-gold'>
                     <BookOpen size={18} />
                     <span className='text-xs font-semibold uppercase tracking-wider'>
-                      Resource
+                      {t.books.resource}
                     </span>
                   </div>
 
@@ -72,7 +74,7 @@ export default function BooksPage() {
                       target='_blank'
                       className='flex-1 rounded-lg border border-gold px-4 py-2 text-center text-sm font-medium text-gold transition hover:bg-gold hover:text-navy'
                     >
-                      Read
+                      {t.books.read}
                     </a>
 
                     <a
@@ -81,7 +83,7 @@ export default function BooksPage() {
                       className='inline-flex items-center gap-2 rounded-lg bg-gold px-4 py-2 text-sm font-medium text-navy transition hover:opacity-90'
                     >
                       <Download size={16} />
-                      Download
+                      {t.books.download}
                     </a>
                   </div>
                 </div>
@@ -95,14 +97,11 @@ export default function BooksPage() {
       <section className='bg-gold-pale px-6 py-16 text-center dark:bg-navy-mid'>
         <div className='mx-auto max-w-2xl'>
           <h2 className='font-serif text-3xl font-bold text-navy dark:text-white'>
-            Grow in God's Word
+            {t.books.ctaTitle}
           </h2>
 
           <p className='mt-4 text-neutral-600 dark:text-neutral-400'>
-            Dive into our collection of biblical resources and strengthen your
-            faith. Whether you're seeking to deepen your understanding of
-            Scripture or looking for practical guidance, our resources are here
-            to support your spiritual journey.
+            {t.books.ctaDescription}
           </p>
         </div>
       </section>

@@ -131,4 +131,16 @@ export const om: Translation = {
     emptyDescription:
       'Yeroo ammaa kanatti lallabni walitti fufiinsaa agarsiifamu hin jiru.',
   },
+  books: {
+    label: 'Kitaabota & Maddoota',
+    title: 'Maddoota Macaafa Qulqulluu',
+    description:
+      "Amantii keessan jabeessuufi hubannaa Dubbii Waaqayyoo keessan gadi fageessuuf kan qophaa'an, kitaabota Kiristos giddu-galeessa godhatan, qajeelfamoota qo'annaa fi maddoota Macaafa Qulqulluu guddachaa jiran asitti bari.",
+    resource: 'Madda',
+    read: 'Dubbisi',
+    download: 'Buifadhu (Download)',
+    ctaTitle: 'Dubbii Waaqayyoo Keessatti Guddadhu',
+    ctaDescription:
+      'Walitti qabiinsa maddoota Macaafa Qulqulluu keenya keessa lixuun amantii keessan jabeessaa. Hubannaa keessan gadi fageessuuf yookiin qajeelfama hojiirra oolu barbaaddanii, maddoonni keenya jireenya hafuuraa keessan deeggaruuf as jiru.',
+  },
 }

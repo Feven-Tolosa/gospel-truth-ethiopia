@@ -118,4 +118,16 @@ export type Translation = {
     emptyTitle: string
     emptyDescription: string
   }
+  books: {
+    label: string
+    title: string
+    description: string
+
+    resource: string
+    read: string
+    download: string
+
+    ctaTitle: string
+    ctaDescription: string
+  }
 }
