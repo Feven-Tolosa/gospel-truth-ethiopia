@@ -89,4 +89,24 @@ export const en: Translation = {
     planVisit: 'Plan Your Visit',
     contactUs: 'Contact Us',
   },
+  footer: {
+    description:
+      'An evangelical church committed to proclaiming the Gospel faithfully throughout Ethiopia and beyond.',
+
+    explore: 'Explore',
+    aboutUs: 'About Us',
+    beliefs: 'What We Believe',
+    sermons: 'Sermons',
+    serviceTimes: 'Service Times',
+
+    resources: 'Resources',
+    books: 'Books',
+    audioSermons: 'Audio Sermons',
+    prayerRequests: 'Prayer Requests',
+    eventsCalendar: 'Events Calendar',
+
+    contact: 'Contact',
+
+    copyright: 'All rights reserved.',
+  },
 }

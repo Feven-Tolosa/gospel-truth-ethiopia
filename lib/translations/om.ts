@@ -86,4 +86,20 @@ export const om: Translation = {
     planVisit: 'Daawwannaa Keessan Karoorfadhaa',
     contactUs: 'Nu Qunnamaa',
   },
+  footer: {
+    description:
+      'Walda Kiristaanaa wangeelaawaa guutuu Itoophiyaa fi sanyii isheetii olitti wangeela amanamummaan lallabuuf muratte.',
+    explore: 'Bari',
+    aboutUs: "Waa'ee Keenya",
+    beliefs: 'Waan Nu Amannu',
+    sermons: 'Lallaba',
+    serviceTimes: 'Yeroo Tajaajilaa',
+    resources: 'Maddi',
+    books: 'Kitaabota',
+    audioSermons: 'Lallaba Sagaleen',
+    prayerRequests: 'Gaaffii Kadhannaa',
+    eventsCalendar: 'Kalandarii Sagantaawwanii',
+    contact: 'Quunnamtii',
+    copyright: 'Mirgi hunduu eegamaadha.',
+  },
 }

@@ -1,20 +1,22 @@
 'use client'
 
 import Link from 'next/link'
-import { Phone, MapPin, Globe, Send, ArrowRight } from 'lucide-react'
+import { Phone, MapPin, Globe, Send } from 'lucide-react'
 import { SlSocialFacebook } from 'react-icons/sl'
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
 
 export function Footer() {
+  const { locale } = useLanguage()
+  const t = translations[locale]
+
   return (
     <footer className='relative overflow-hidden border-t border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-gray-950'>
-      {/* Gold Accent */}
       <div className='h-[2px] w-full bg-gradient-to-r from-transparent via-gold to-transparent' />
 
-      {/* Background Glow */}
       <div className='absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-gold/5 blur-3xl' />
 
       <div className='mx-auto max-w-7xl px-6 py-16'>
-        {/* Footer Grid */}
         <div className='grid gap-12 border-b border-slate-200 pb-12 dark:border-white/10 md:grid-cols-2 lg:grid-cols-4'>
           {/* Brand */}
           <div>
@@ -27,23 +29,22 @@ export function Footer() {
             </p>
 
             <p className='mt-5 text-sm leading-relaxed text-slate-600 dark:text-white/50'>
-              An evangelical church committed to proclaiming the Gospel
-              faithfully throughout Ethiopia and beyond.
+              {t.footer.description}
             </p>
           </div>
 
-          {/* Links */}
+          {/* Explore */}
           <div>
             <h4 className='mb-5 text-xs font-bold uppercase tracking-[0.2em] text-gold'>
-              Explore
+              {t.footer.explore}
             </h4>
 
             <ul className='space-y-3'>
               {[
-                ['About Us', '/about'],
-                ['What We Believe', '/beliefs'],
-                ['Sermons', '/playlists'],
-                ['Service Times', '/schedule'],
+                [t.footer.aboutUs, '/about'],
+                [t.footer.beliefs, '/beliefs'],
+                [t.footer.sermons, '/playlists'],
+                [t.footer.serviceTimes, '/schedule'],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link
@@ -60,32 +61,45 @@ export function Footer() {
           {/* Resources */}
           <div>
             <h4 className='mb-5 text-xs font-bold uppercase tracking-[0.2em] text-gold'>
-              Resources
+              {t.footer.resources}
             </h4>
 
-            <ul className='space-y-3'>
-              {[
-                ['Books', '/books'],
-                ['Audio Sermons', 'https://t.me/DawitFassilMinistry'],
-                ['Prayer Requests', '/prayer'],
-                ['Events Calendar', '/events'],
-              ].map(([label, href]) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    className='text-sm text-slate-600 transition hover:text-gold dark:text-white/50 dark:hover:text-gold'
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className='space-y-4 text-sm'>
+              <Link
+                href='/books'
+                className='flex items-center gap-3 text-slate-600 hover:text-gold dark:text-white/50'
+              >
+                {t.footer.books}
+              </Link>
+
+              <a
+                href='https://t.me/DawitFassilMinistry'
+                target='_blank'
+                className='flex items-center gap-3 text-slate-600 hover:text-gold dark:text-white/50'
+              >
+                {t.footer.audioSermons}
+              </a>
+
+              <Link
+                href='/prayer'
+                className='flex items-center gap-3 text-slate-600 dark:text-white/50 hover:text-gold'
+              >
+                {t.footer.prayerRequests}
+              </Link>
+
+              <Link
+                href='#'
+                className='flex items-center gap-3 text-slate-600 hover:text-gold dark:text-white/50'
+              >
+                {t.footer.eventsCalendar}
+              </Link>
+            </div>
           </div>
 
           {/* Contact */}
           <div>
             <h4 className='mb-5 text-xs font-bold uppercase tracking-[0.2em] text-gold'>
-              Contact
+              {t.footer.contact}
             </h4>
 
             <div className='space-y-4 text-sm'>
@@ -123,31 +137,30 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className='flex flex-col items-center justify-between gap-6 pt-8 md:flex-row'>
           <p className='text-xs text-slate-500 dark:text-white/30'>
-            © {new Date().getFullYear()} Gospel Truth Church Ethiopia. All
-            rights reserved.
+            © {new Date().getFullYear()} Gospel Truth Church Ethiopia.{' '}
+            {t.footer.copyright}
           </p>
 
           <div className='flex gap-3'>
-            <Link
+            <a
               href='https://www.facebook.com/Dawit-Fassil-Ministry-1873139229468315/'
               target='_blank'
               rel='noopener noreferrer'
               className='rounded-full border border-slate-200 p-2 transition hover:border-gold hover:bg-gold/10 dark:border-white/10'
             >
               <SlSocialFacebook size={18} />
-            </Link>
+            </a>
 
-            <Link
+            <a
               href='https://t.me/DawitFassilMinistry'
               target='_blank'
               rel='noopener noreferrer'
               className='rounded-full border border-slate-200 p-2 transition hover:border-gold hover:bg-gold/10 dark:border-white/10'
             >
               <Send size={18} />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

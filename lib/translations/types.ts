@@ -74,4 +74,23 @@ export type Translation = {
     planVisit: string
     contactUs: string
   }
+  footer: {
+    description: string
+
+    explore: string
+    aboutUs: string
+    beliefs: string
+    sermons: string
+    serviceTimes: string
+
+    resources: string
+    books: string
+    audioSermons: string
+    prayerRequests: string
+    eventsCalendar: string
+
+    contact: string
+
+    copyright: string
+  }
 }
