@@ -2,8 +2,12 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
 
 export default function AboutPage() {
+  const { locale } = useLanguage()
+  const t = translations[locale]
   return (
     <main className='pt-[70px]'>
       <div className='relative w-full overflow-hidden pt-12'>
@@ -34,12 +38,10 @@ export default function AboutPage() {
           transition={{ duration: 1 }}
           className='absolute bottom-8 text-center w-full max-w-7xl -translate-x-1/2 px-6 md:block pt-12'
         >
-          <p className=' py-3  text-gold font-serif '>
-            - Welcome to Gospel Truth Church -
-          </p>
+          <p className=' py-3  text-gold font-serif '>{t.about.welcome}</p>
 
           <h3 className='pb-16 text-white/80 font-serif text-3xl font-bold text-white sm:text-1xl md:text-3xl lg:text-5xl'>
-            Proclaiming the Truth of God&apos;s Word
+            {t.about.heroTitle}
           </h3>
         </motion.div>
       </section>
@@ -47,28 +49,16 @@ export default function AboutPage() {
       <section className='px-4 py-16'>
         <div className='mx-auto max-w-5xl'>
           <p className='mb-6 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300'>
-            Gospel Truth Church is an evangelical assembly committed to the
-            fundamental pillars of the Christian faith — the Holy Trinity, the
-            divinity and humanity of Jesus Christ, the authority of Scripture,
-            the gospel of grace, the forgiveness of sins, the second coming of
-            Christ, and the coming judgment.
+            {t.about.paragraph1}
           </p>
           <p className='mb-6 rounded-lg border-l-4 border-gold bg-gold-pale p-6 font-ethiopic text-base leading-loose text-neutral-700 dark:bg-navy-mid dark:text-neutral-300'>
-            የወንጌል እውነት ቤተክርስቲያን ፦ በዋነኞቹ አእማደ እምነቶች፣ በቅድስት ሥላሴ ፣ በኢየሱስ ክርስቶስ
-            አምላክነትና ሰውነት፣ በመጽሓፍ ቅዱስ ስልጣን፣ በጸጋው ወንጌል፣ በኃጢአት ስርየት፣ በዳግም ምጽአት ፣
-            በሚመጣው ፍርድ የምታምን ወንጌላዊት ጉባኤ ናት።
+            {t.about.paragraph2}
           </p>
           <p className='mb-6 leading-relaxed text-neutral-700 dark:text-neutral-300'>
-            We have local congregations across Southern, Southwestern, and
-            Western Ethiopia. The church is led by an eldership, with all
-            ministers of the Word and members of every spiritual department
-            serving under the elders&apos; oversight.
+            {t.about.paragraph3}
           </p>
           <p className='leading-relaxed text-neutral-700 dark:text-neutral-300'>
-            Our primary aim is to preach the gospel boldly and without fear —
-            centering on Christ alone, holding fast to the teaching of our
-            spiritual fathers, and bearing the cost of that calling for the sake
-            of others.{' '}
+            {t.about.paragraph4}
             <span className='font-medium text-gold'>2 Corinthians 4:1–18</span>
           </p>
         </div>
@@ -77,7 +67,7 @@ export default function AboutPage() {
         href='/ministries'
         className='mx-auto mb-14 block w-fit rounded-lg border border-gold p-6 font-serif font-bold text-navy-light dark:text-white transition-all duration-300 hover:bg-gold sm:text-lg '
       >
-        Ministries
+        {t.about.ministriesButton}
       </Link>
     </main>
   )

@@ -93,4 +93,15 @@ export type Translation = {
 
     copyright: string
   }
+  about: {
+    welcome: string
+    heroTitle: string
+
+    paragraph1: string
+    paragraph2: string
+    paragraph3: string
+    paragraph4: string
+
+    ministriesButton: string
+  }
 }

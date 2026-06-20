@@ -100,4 +100,17 @@ export const am: Translation = {
     contact: 'ግንኙነት',
     copyright: 'መብቱ በህግ የተጠበቀ ነው።',
   },
+  about: {
+    welcome: '- ወደ ወንጌል እውነት ቤተ ክርስቲያን እንኳን በደህና መጡ -',
+    heroTitle: 'የእግዚአብሔርን ቃል እውነት መስበክ',
+    paragraph1:
+      'የወንጌል እውነት ቤተክርስቲያን በዋነኞቹ አእማደ እምነቶች፣ በቅድስት ሥላሴ፣ በኢየሱስ ክርስቶስ አምላክነትና ሰውነት፣ በመጽሐፍ ቅዱስ ሥልጣን፣ በጸጋው ወንጌል፣ በኃጢአት ስርየት፣ በዳግም ምጽአት እና በሚመጣው ፍርድ የምታምን ወንጌላዊት ጉባኤ ናት።',
+    paragraph2:
+      'Gospel Truth Church is an evangelical assembly committed to the fundamental pillars of the Christian faith — the Holy Trinity, the divinity and humanity of Jesus Christ, the authority of Scripture, the gospel of grace, the forgiveness of sins, the second coming of Christ, and the coming judgment.',
+    paragraph3:
+      'በደቡብ፣ በደቡብ ምዕራብ እና በምዕራብ ኢትዮጵያ ውስጥ የአካባቢ አብያተ ክርስቲያናት (ጉባኤያት) አሉን። ቤተክርስቲያኗ በሽማግሌዎች አካል የምትመራ ሲሆን፣ የቃሉ አገልጋዮች በሙሉ እና የእያንዳንዱ መንፈሳዊ ክፍል አባላት በሽማግሌዎች ቁጥጥርና መሪነት ሥር ያገለግላሉ።',
+    paragraph4:
+      'ዋና ዓላማችን ወንጌልን በደፍረትና ያለ ፍርሃት መስበክ ነው — በክርስቶስ ላይ ብቻ ማዕከል በማድረግ፣ የመንፈሳዊ አባቶቻችንን ትምህርት አጥብቀን በመያዝ እና ስለ ሌሎች ሲባል የዚያን ጥሪ ዋጋ መክፈል።',
+    ministriesButton: 'አገልግሎቶች',
+  },
 }

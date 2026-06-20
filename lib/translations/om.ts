@@ -102,4 +102,18 @@ export const om: Translation = {
     contact: 'Quunnamtii',
     copyright: 'Mirgi hunduu eegamaadha.',
   },
+  about: {
+    welcome:
+      '- Baga Gara Walda Kiristaana Dhugaa Wangelaatti Baga Heenyan Dhuftan -',
+    heroTitle: 'Dhugaa Dubbii Waaqayyoo Lallabuu',
+    paragraph1:
+      "Waldaan Kiristaanaa Dhugaa Wangelaa waldaa wangeelaawaa utubaawwan riqaa amantii gurguddoo, Sadanummaa Qulqulluu, gooftummaa fi eenyummaa Yesuus Kiristos, aboo Macaafa Qulqulluu, wangela ayyaanaa, dhiifama cubbuu, deebi'anii dhufuu Kiristos fi firdiidhufutti amantudha.",
+    paragraph2:
+      'Gospel Truth Church is an evangelical assembly committed to the fundamental pillars of the Christian faith — the Holy Trinity, the divinity and humanity of Jesus Christ, the authority of Scripture, the gospel of grace, the forgiveness of sins, the second coming of Christ, and the coming judgment.',
+    paragraph3:
+      "Itoophiyaa Gama Kibbaa, Kibba-Lixaa fi Lixaa keessatti waldaalee naannoo qabna. Waldaan Kiristaanaa kun jaarsoliin kan hoogganamtu yoo ta'u; tajaajiltoonni dubbii hundi fi miseensonni kutaalee hafuuraa hundi hoggansa fi to'annoo jaarsolii jalatti tajaajilu.",
+    paragraph4:
+      'Kaayyoon keenya inni guddaan wangeela ija jabummaan fi sodaa tokko malee lallabuudha — Kiristos qofa giddu-galeessa gochuu, barumsa abbootii keenya hafuuraa jabeessanii qabachuu, fi sababa namoota biroof jedhanii gatii waamicha sanaa kaffaluudha.',
+    ministriesButton: 'Tajaajiloota',
+  },
 }

@@ -109,4 +109,22 @@ export const en: Translation = {
 
     copyright: 'All rights reserved.',
   },
+  about: {
+    welcome: '- Welcome to Gospel Truth Church -',
+    heroTitle: "Proclaiming the Truth of God's Word",
+
+    paragraph1:
+      'Gospel Truth Church is an evangelical assembly committed to the fundamental pillars of the Christian faith — the Holy Trinity, the divinity and humanity of Jesus Christ, the authority of Scripture, the gospel of grace, the forgiveness of sins, the second coming of Christ, and the coming judgment.',
+
+    paragraph2:
+      'የወንጌል እውነት ቤተክርስቲያን ፦ በዋነኞቹ አእማደ እምነቶች፣ በቅድስት ሥላሴ ፣ በኢየሱስ ክርስቶስ አምላክነትና ሰውነት፣ በመጽሓፍ ቅዱስ ስልጣን፣ በጸጋው ወንጌል፣ በኃጢአት ስርየት፣ በዳግም ምጽአት ፣ በሚመጣው ፍርድ የምታምን ወንጌላዊት ጉባኤ ናት።',
+
+    paragraph3:
+      "We have local congregations across Southern, Southwestern, and Western Ethiopia. The church is led by an eldership, with all ministers of the Word and members of every spiritual department serving under the elders' oversight.",
+
+    paragraph4:
+      'Our primary aim is to preach the gospel boldly and without fear — centering on Christ alone, holding fast to the teaching of our spiritual fathers, and bearing the cost of that calling for the sake of others.',
+
+    ministriesButton: 'Ministries',
+  },
 }
