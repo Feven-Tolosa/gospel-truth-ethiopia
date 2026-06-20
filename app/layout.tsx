@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
 import { WhatsAppFloat } from '@/components/whatsapp-float'
-
+import { LanguageProvider } from '@/context/language-context'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -40,12 +40,14 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} ${notoEthiopic.variable} font-sans antialiased`}
       >
-        <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
-          <Navbar />
-          {children}
-          <Footer />
-          {/* <WhatsAppFloat /> */}
-        </ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
+            <Navbar />
+            {children}
+            <Footer />
+            {/* <WhatsAppFloat /> */}
+          </ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   )

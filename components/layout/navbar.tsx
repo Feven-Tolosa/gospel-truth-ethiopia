@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { ThemeToggle } from '@/components/theme-toggle'
 import Image from 'next/image'
+import LanguageSwitcher from '../language-switcher'
 
 const links = [
   { href: '/about', label: 'About Us' },
@@ -83,8 +84,11 @@ export function Navbar() {
               </Link>
             </li>
           ))}
-
           <li className='ml-2'>
+            <LanguageSwitcher />
+          </li>
+
+          <li>
             <ThemeToggle />
           </li>
         </ul>
@@ -137,6 +141,10 @@ export function Navbar() {
                 </Link>
               </li>
             ))}
+
+            <div className='mt-4 border-t border-white/10 pt-4'>
+              <LanguageSwitcher />
+            </div>
 
             <li>
               <Link

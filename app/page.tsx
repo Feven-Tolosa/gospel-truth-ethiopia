@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import HeroSection from '@/components/home/HeroSection'
 import WelcomeSection from '@/components/home/WelcomeSection'
 import SchedulePreview from '@/components/home/SchedulePreview'
