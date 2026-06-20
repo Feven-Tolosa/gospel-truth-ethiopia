@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { BookOpen, Cross, ShieldCheck, ArrowRight } from 'lucide-react'
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
 
 const beliefs = [
   {
@@ -46,6 +48,8 @@ const item = {
 }
 
 export default function BeliefSection() {
+  const { locale } = useLanguage()
+  const t = translations[locale]
   return (
     <section className='relative overflow-hidden bg-slate-50 px-6 py-24 transition-colors duration-500 dark:bg-navy'>
       {/* Decorative Background */}
@@ -61,16 +65,14 @@ export default function BeliefSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <div className='section-label'>What We Believe</div>
+          <div className='section-label'>{t.whatWeBelieve.label}</div>
 
           <h2 className='section-title text-slate-900 dark:text-white'>
-            Our Doctrinal Foundation
+            {t.whatWeBelieve.title}
           </h2>
 
           <p className='section-subtitle mb-14 max-w-3xl text-slate-600 dark:text-white/60'>
-            Standing firmly upon the eternal truth of God’s Word, we embrace the
-            historic Christian faith and proclaim the Gospel of Jesus Christ
-            with conviction and grace.
+            {t.whatWeBelieve.description}
           </p>
         </motion.div>
 
@@ -129,7 +131,7 @@ export default function BeliefSection() {
             href='/beliefs'
             className='group inline-flex items-center gap-2 rounded-full border border-slate-300 px-7 py-3 text-sm font-medium text-slate-900 transition-all duration-300 hover:border-gold hover:bg-gold hover:text-navy dark:border-white/20 dark:text-white'
           >
-            Read Our Full Beliefs
+            {t.whatWeBelieve.readFullBeliefs}
             <ArrowRight
               size={16}
               className='transition-transform duration-300 group-hover:translate-x-1'

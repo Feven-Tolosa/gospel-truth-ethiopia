@@ -50,4 +50,15 @@ export type Translation = {
     pastorName: string
     pastorTitle: string
   }
+  whatWeBelieve: {
+    label: string
+    title: string
+    description: string
+    readFullBeliefs: string
+  }
+  latestSermons: {
+    label: string
+    title: string
+    description: string
+  }
 }

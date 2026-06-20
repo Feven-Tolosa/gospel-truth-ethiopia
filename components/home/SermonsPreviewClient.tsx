@@ -4,12 +4,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import type { Sermon } from '@/lib/youtube'
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
+
 interface Props {
   featured: Sermon
   recent: Sermon[]
 }
 
 export default function SermonsPreviewClient({ featured, recent }: Props) {
+  const { locale } = useLanguage()
+  const t = translations[locale]
   return (
     <section className='relative overflow-hidden bg-gold-pale px-6 py-24 dark:bg-navy-mid'>
       {/* Background Glow */}
@@ -26,13 +31,12 @@ export default function SermonsPreviewClient({ featured, recent }: Props) {
           className='mb-12 flex flex-wrap items-start justify-between gap-4'
         >
           <div>
-            <div className='section-label'>Latest Sermons</div>
+            <div className='section-label'>{t.latestSermons.label}</div>
 
-            <h2 className='section-title'>Hear the Word of God</h2>
+            <h2 className='section-title'> {t.latestSermons.title} </h2>
 
             <p className='section-subtitle max-w-2xl'>
-              Faithful biblical preaching and teaching from Dawit Fassil
-              Ministries.
+              {t.latestSermons.description}
             </p>
           </div>
         </motion.div>

@@ -57,4 +57,17 @@ export const am: Translation = {
     pastorName: 'ወንድም ዳዊት ፋሲል',
     pastorTitle: 'ፓስተር',
   },
+  whatWeBelieve: {
+    label: 'የምናምነው',
+    title: 'የመሠረተ እምነት መሠረታችን',
+    description:
+      'በዘላለማዊው የእግዚአብሔር ቃል እውነት ላይ ጸንተን በመቆም፣ ታሪካዊውን የክርስትና እምነት እንቀበላለን፤ የኢየሱስ ክርስቶስንም ወንጌል በጽኑ እምነትና በጸጋ እንመሰክራለን።',
+    readFullBeliefs: 'ሙሉ እምነታችንን ያንብቡ',
+  },
+  latestSermons: {
+    label: 'የቅርብ ጊዜ ስብከቶች',
+    title: 'የእግዚአብሔርን ቃል ይስሙ',
+    description:
+      'ከዳዊት ፋሲል አገልግሎት (Dawit Fassil Ministries) የታመነ የመጽሐፍ ቅዱስ ስብከት እና ትምህርት።',
+  },
 }

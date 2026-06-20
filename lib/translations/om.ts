@@ -58,4 +58,17 @@ export const om: Translation = {
     pastorName: 'Obboleessa Daawit Faasiil',
     pastorTitle: 'Paasitera',
   },
+  whatWeBelieve: {
+    label: 'Waan Nu Amannu',
+    title: 'Hundee Barumsa Amantii Keenyaa',
+    description:
+      'Dhugaa bara baraa Dubbii Waaqayyoo irratti jabaannee dhaabbachuun, amantii Kiristaanaa seenaa qabu ni fudhanna; wangeela Yesuus Kiristosis ejjennoo cimaa fi ayyaanaan ni lallabna.',
+    readFullBeliefs: 'Guutuu Amantii Keenyaa Dubbisi',
+  },
+  latestSermons: {
+    label: 'Lallaba Dhiyoo',
+    title: 'Dubbii Waaqayyoo Dhagahi',
+    description:
+      "Tajaajila Daawit Faasiil (Dawit Fassil Ministries) irraa lallaba fi barsiisa Macaafa Qulqulluu amanamaa ta'e.",
+  },
 }

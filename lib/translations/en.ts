@@ -61,4 +61,17 @@ export const en: Translation = {
     pastorName: 'Brother Dawit Fassil',
     pastorTitle: 'Pastor',
   },
+  whatWeBelieve: {
+    label: 'What We Believe',
+    title: 'Our Doctrinal Foundation',
+    description:
+      'Standing firmly upon the eternal truth of God’s Word, we embrace the historic Christian faith and proclaim the Gospel of Jesus Christ with conviction and grace.',
+    readFullBeliefs: 'Read Our Full Beliefs',
+  },
+  latestSermons: {
+    label: 'Latest Sermons',
+    title: 'Hear the Word of God',
+    description:
+      'Faithful biblical preaching and teaching from Dawit Fassil Ministries.',
+  },
 }
