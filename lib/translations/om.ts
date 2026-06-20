@@ -48,4 +48,14 @@ export const om: Translation = {
     livesChanged: 'Jireenyota Jijjiiraman',
     gospelProclaimed: 'Wangeela Labsame',
   },
+  pastorMessage: {
+    label: 'Ergaa Paasitera Keenya Irraa',
+    title: 'Baga Gara Walda Kiristaana Dhugaa Wangelaatti Baga Heenyan Dhuftan',
+    welcome: 'Welcome to Gospel Truth Church',
+    message:
+      "Maqaa Gooftaa keenya Yesuus Kiristosiin ayyaanni fi fagaan isiniif haa ta'u. Isti yeroo jalqabaaf nu daawwachaa jirtu, deebii barbaadaa jirtu, yookiin maatii walda kiristaanaa barbaadaa jirtu, kadhannaan keenya dhugaa Dubbii Waaqayyoo akka argattanii fi humna wangeelaa kan jireenya jijjiiru akka dhandhamtanifi.",
+    button: 'Waa’ee Walda Kiristaana Keenyaa Caalaatti Bari',
+    pastorName: 'Obboleessa Daawit Faasiil',
+    pastorTitle: 'Paasitera',
+  },
 }

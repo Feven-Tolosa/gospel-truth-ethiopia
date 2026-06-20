@@ -47,4 +47,14 @@ export const am: Translation = {
     livesChanged: 'የተለወጡ ሕይወቶች',
     gospelProclaimed: 'የተሰበከ ወንጌል',
   },
+  pastorMessage: {
+    label: 'ከፓስተራችን የተላለፈ መልዕክት',
+    title: 'ወደ ወንጌል እውነት ቤተ ክርስቲያን እንኳን በደህና መጡ',
+    welcome: 'Welcome to Gospel Truth Church',
+    message:
+      'በጌታችን በኢየሱስ ክርስቶስ ስም ጸጋና ሰላም ለእናንተ ይሁን። ለመጀመሪያ ጊዜ እየጎበኙን ቢሆን፣ ለጥያቄዎችዎ መልስ እየፈለጉ ቢሆን ወይም የቤተክርስቲያን ቤተሰብ ለመፈለግ የመጡ፣ ጸሎታችን የእግዚአብሔርን ቃል እውነት እንዲያገኙ እና የወንጌልን የማለወጥ ኃይል እንዲለማመዱ ነው።',
+    button: 'ስለ ቤተክርስቲያናችን የበለጠ ይረዱ',
+    pastorName: 'ወንድም ዳዊት ፋሲል',
+    pastorTitle: 'ፓስተር',
+  },
 }

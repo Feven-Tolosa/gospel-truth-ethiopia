@@ -51,4 +51,14 @@ export const en: Translation = {
     livesChanged: 'Lives Changed',
     gospelProclaimed: 'Gospel Proclaimed',
   },
+  pastorMessage: {
+    label: 'A Word From Our Pastor',
+    title: 'Welcome to Gospel Truth Church',
+    welcome: 'እንኳን ወደ ወንጌል እውነት ቤተ ክርስቲያን በደህና መጡ',
+    message:
+      "Grace and peace to you in the name of our Lord Jesus Christ. Whether you are visiting for the first time, seeking answers, or looking for a church family, our prayer is that you would encounter the truth of God's Word and experience the transforming power of the Gospel.",
+    button: 'Learn More About Our Church',
+    pastorName: 'Brother Dawit Fassil',
+    pastorTitle: 'Pastor',
+  },
 }

@@ -41,4 +41,13 @@ export type Translation = {
     livesChanged: string
     gospelProclaimed: string
   }
+  pastorMessage: {
+    label: string
+    title: string
+    welcome: string
+    message: string
+    button: string
+    pastorName: string
+    pastorTitle: string
+  }
 }
