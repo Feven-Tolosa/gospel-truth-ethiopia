@@ -5,14 +5,18 @@ import Link from 'next/link'
 import { ThemeToggle } from '@/components/theme-toggle'
 import Image from 'next/image'
 import LanguageSwitcher from '../language-switcher'
-
-const links = [
-  { href: '/about', label: 'About Us' },
-  { href: '/playlists', label: 'Sermons' },
-  { href: '/books', label: 'Books' },
-]
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
 
 export function Navbar() {
+  const { locale } = useLanguage()
+  const t = translations[locale]
+
+  const links = [
+    { href: '/about', label: t.nav.about },
+    { href: '/playlists', label: t.nav.sermons },
+    { href: '/books', label: t.nav.books },
+  ]
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 

@@ -19,4 +19,10 @@ export const en: Translation = {
     noteTitle: 'Note',
     note: "Sunday evening Bible teaching is preceded by a choir worship beginning at 5:00 PM. Saturday's Youth Fellowship includes worship, preaching, and a solo song.",
   },
+  nav: {
+    about: 'About Us',
+    sermons: 'Sermons',
+    books: 'Books',
+    serviceTimes: 'Service Times',
+  },
 }

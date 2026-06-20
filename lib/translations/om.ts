@@ -19,4 +19,10 @@ export const om: Translation = {
     noteTitle: 'Hubachiisa',
     note: 'Barumsi Macaafa Qulqulluu galgala Dilbataa waaqeffannaa faarfattootaa booda jalqaba. Waldaan Dargaggootaa mootummaa Waaqayyoo waaqeffannaa, lallabaa fi faarfannaa addaa qaba.',
   },
+  nav: {
+    about: 'Waa’ee Keenya',
+    sermons: 'Lallaboota',
+    books: 'Kitaabota',
+    serviceTimes: 'Sa’aatii Tajaajilaa',
+  },
 }

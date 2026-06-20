@@ -16,4 +16,10 @@ export type Translation = {
     noteTitle: string
     note: string
   }
+  nav: {
+    about: string
+    sermons: string
+    books: string
+    serviceTimes: string
+  }
 }

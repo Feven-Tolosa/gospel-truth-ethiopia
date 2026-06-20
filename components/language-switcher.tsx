@@ -8,7 +8,7 @@ export default function LanguageSwitcher() {
 
   return (
     <div className='relative'>
-      <div className='flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur-sm dark:border-white/10'>
+      <div className='flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white'>
         <Languages size={16} />
 
         <select
@@ -17,15 +17,15 @@ export default function LanguageSwitcher() {
           className='bg-transparent outline-none'
         >
           <option value='en' className='text-black'>
-            English
+            En
           </option>
 
           <option value='am' className='text-black'>
-            አማርኛ
+            አማ
           </option>
 
           <option value='om' className='text-black'>
-            Afaan Oromo
+            AO
           </option>
         </select>
       </div>
