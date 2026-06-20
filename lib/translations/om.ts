@@ -116,4 +116,19 @@ export const om: Translation = {
       'Kaayyoon keenya inni guddaan wangeela ija jabummaan fi sodaa tokko malee lallabuudha — Kiristos qofa giddu-galeessa gochuu, barumsa abbootii keenya hafuuraa jabeessanii qabachuu, fi sababa namoota biroof jedhanii gatii waamicha sanaa kaffaluudha.',
     ministriesButton: 'Tajaajiloota',
   },
+  playlists: {
+    label: 'Tarree Taphaa (Playlists)',
+    title: 'Walitti Qabiinsa & Tarree Lallabaa',
+    description:
+      'Barumsa walitti fufiinsaa fi walitti qabiinsa lallabaa filataman asitti ilaali.',
+    videos: 'ViディYoo (Videos)',
+    teachings: 'Barsiisota',
+    errorTitle: 'Tarree taphaa fe’uu hin danda’amne',
+    errorDescription:
+      "Maaloo quunnamtii intarneetii keessanii mirকaneeffatanii irra deebi'anii yaalaa.",
+    retryText: 'Fuula Haaromsi',
+    emptyTitle: 'Tarreen taphaa jiru hin jiru',
+    emptyDescription:
+      'Yeroo ammaa kanatti lallabni walitti fufiinsaa agarsiifamu hin jiru.',
+  },
 }

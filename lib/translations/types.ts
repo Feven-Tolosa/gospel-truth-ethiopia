@@ -104,4 +104,18 @@ export type Translation = {
 
     ministriesButton: string
   }
+  playlists: {
+    label: string
+    title: string
+    description: string
+    videos: string
+    teachings: string
+
+    errorTitle: string
+    errorDescription: string
+    retryText: string
+
+    emptyTitle: string
+    emptyDescription: string
+  }
 }

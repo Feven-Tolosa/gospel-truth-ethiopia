@@ -127,4 +127,20 @@ export const en: Translation = {
 
     ministriesButton: 'Ministries',
   },
+  playlists: {
+    label: 'Playlists',
+    title: 'Sermon Series & Collections',
+    description: 'Browse teaching series and curated sermon collections.',
+
+    videos: 'Videos',
+    teachings: 'teachings',
+
+    errorTitle: 'Unable to load playlists',
+    errorDescription: 'Please check your internet connection and try again.',
+
+    retryText: 'Refresh Page',
+
+    emptyTitle: 'No playlists available',
+    emptyDescription: 'There are currently no sermon series to display.',
+  },
 }

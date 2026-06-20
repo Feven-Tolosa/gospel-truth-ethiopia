@@ -25,7 +25,7 @@ export default function LanguageSwitcher() {
           </option>
 
           <option value='om' className='text-black'>
-            AO
+            Om
           </option>
         </select>
       </div>
