@@ -59,7 +59,7 @@ export default function WelcomeSection() {
       </div>
 
       {/* Content */}
-      <div className='mx-auto max-w-7xl px-6 py-16 lg:py-24 bg-gold-pale dark:bg-navy'>
+      <div className='mx-auto px-6 py-16 lg:py-24 bg-gold-pale dark:bg-navy'>
         <div className='grid gap-12 lg:grid-cols-[1fr_auto_320px] lg:gap-16'>
           {/* Left Content */}
           <motion.div

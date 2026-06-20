@@ -43,7 +43,7 @@ export default function BeliefsPage() {
       </section>
       <Link
         href='/books'
-        className='mx-auto mb-16 block w-fit rounded-lg border border-gold p-6 font-serif font-bold text-white transition-all duration-300 hover:bg-gold/90 sm:text-lg'
+        className='mx-auto mb-16 block w-fit rounded-lg border border-gold p-6 font-serif font-bold text-neutral-800 hover:text-white dark:text-white transition-all duration-300 hover:bg-gold/90 sm:text-lg'
       >
         Explore Books
       </Link>

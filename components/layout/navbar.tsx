@@ -37,7 +37,7 @@ export function Navbar() {
     >
       {/* Main Navbar */}
       <div
-        className={`mx-auto flex max-w-7xl items-center justify-between px-6 transition-all duration-300 border-gold/10 bg-black/20 ${
+        className={`mx-auto flex items-center justify-between px-6 transition-all duration-300 border-gold/10 bg-black/20 ${
           scrolled ? 'h-[66px]' : 'h-[80px]'
         }`}
       >

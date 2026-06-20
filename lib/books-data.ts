@@ -81,7 +81,7 @@ export const books = [
     author: 'Dawit Fassil',
     description:
       'An exploration of the biblical doctrine of dispensationalism, revealing the distinct roles and purposes of God in different periods of history.',
-    pdf: '/books/Dispensation-afan-oromo.pdf',
+    pdf: '/books/Doctrine-of-Discipleshipin-Afan-Oromo_GTC.pdf',
     cover: '/image/books/Dispensation-Afan-Oromo.png',
   },
 
