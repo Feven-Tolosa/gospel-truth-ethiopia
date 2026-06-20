@@ -149,16 +149,6 @@ export function Navbar() {
             <div className='mt-4 border-t border-white/10 pt-4'>
               <LanguageSwitcher />
             </div>
-
-            <li>
-              <Link
-                href='/schedule'
-                onClick={() => setOpen(false)}
-                className='mt-3 inline-flex rounded-md bg-gold px-5 py-3 text-sm font-semibold text-navy transition hover:bg-gold-light'
-              >
-                Service Times
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

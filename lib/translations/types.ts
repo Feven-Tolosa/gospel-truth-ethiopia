@@ -20,6 +20,9 @@ export type Translation = {
     about: string
     sermons: string
     books: string
+  }
+  hero: {
     serviceTimes: string
+    WatchSermons: string
   }
 }

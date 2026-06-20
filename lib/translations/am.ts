@@ -23,35 +23,9 @@ export const am: Translation = {
     about: 'ስለ እኛ',
     sermons: 'ስብከቶች',
     books: 'መጽሐፍት',
+  },
+  hero: {
     serviceTimes: 'የአገልግሎት ሰዓቶች',
-  },
-}
-
-export const translations = {
-  en: {
-    nav: {
-      about: 'About Us',
-      sermons: 'Sermons',
-      books: 'Books',
-      serviceTimes: 'Service Times',
-    },
-  },
-
-  am: {
-    nav: {
-      about: 'ስለ እኛ',
-      sermons: 'ስብከቶች',
-      books: 'መጽሐፍት',
-      serviceTimes: 'የአገልግሎት ሰዓቶች',
-    },
-  },
-
-  om: {
-    nav: {
-      about: 'Waa’ee Keenya',
-      sermons: 'Lallaboota',
-      books: 'Kitaabota',
-      serviceTimes: 'Sa’aatii Tajaajilaa',
-    },
+    WatchSermons: 'ስብከቶች ይመልከቱ',
   },
 }

@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { ChevronDown } from 'lucide-react'
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
 
 interface HeroSectionProps {
   title?: string
@@ -18,6 +19,9 @@ export default function HeroSection({
   scriptureReference = '2 ቆሮንቶስ 4፡5',
   backgroundImage = 'https://images.unsplash.com/photo-1438232992991-995b671e49ea?w=2000&q=80',
 }: HeroSectionProps) {
+  const { locale } = useLanguage()
+  const t = translations[locale]
+
   return (
     <section className='relative flex h-screen min-h-[600px] items-center justify-center overflow-hidden bg-navy mt-12'>
       <div
@@ -53,7 +57,7 @@ export default function HeroSection({
             href='/schedule'
             className='rounded-md border border-white/25 px-7 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/5'
           >
-            Service Times
+            {t.hero.serviceTimes}
           </Link>
           <Link
             href='/playlists'
@@ -61,7 +65,7 @@ export default function HeroSection({
             
             btn-primary  hover:text-white border border-white/25 hover:bg-white/5'
           >
-            Watch Sermons
+            {t.hero.WatchSermons}
           </Link>
         </div>
       </div>

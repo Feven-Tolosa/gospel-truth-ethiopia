@@ -23,6 +23,9 @@ export const om: Translation = {
     about: 'Waa’ee Keenya',
     sermons: 'Lallaboota',
     books: 'Kitaabota',
+  },
+  hero: {
     serviceTimes: 'Sa’aatii Tajaajilaa',
+    WatchSermons: 'Lallaboota',
   },
 }

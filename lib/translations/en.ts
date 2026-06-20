@@ -23,6 +23,9 @@ export const en: Translation = {
     about: 'About Us',
     sermons: 'Sermons',
     books: 'Books',
+  },
+  hero: {
     serviceTimes: 'Service Times',
+    WatchSermons: 'Watch Sermons',
   },
 }
