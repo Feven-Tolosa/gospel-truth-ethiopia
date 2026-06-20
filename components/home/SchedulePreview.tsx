@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { weeklySchedule } from '@/lib/schedule-data'
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
 
 const containerVariants = {
   hidden: {},
@@ -31,7 +33,8 @@ export default function SchedulePreview() {
   const featured = weeklySchedule.filter((s) =>
     ['Sunday', 'Saturday'].includes(s.day),
   )
-
+  const { locale } = useLanguage()
+  const t = translations[locale]
   return (
     <section className='relative overflow-hidden border-t-[3px] border-gold bg-gold-pale px-6 py-20 dark:bg-navy-mid'>
       {/* Background Glow */}
@@ -46,13 +49,12 @@ export default function SchedulePreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className='section-label'>Service Schedule</div>
+          <div className='section-label'>{t.serviceSchedule.label}</div>
 
-          <h2 className='section-title'>Join Us for Worship</h2>
+          <h2 className='section-title'>{t.serviceSchedule.title}</h2>
 
           <p className='section-subtitle mb-10'>
-            Sunday is our main gathering — worship, the Lord&apos;s Supper, and
-            Bible teaching. We also meet every evening of the week.
+            {t.serviceSchedule.description}
           </p>
         </motion.div>
 
@@ -129,7 +131,7 @@ export default function SchedulePreview() {
             className='inline-block'
           >
             <Link href='/schedule' className='btn-primary'>
-              View Full Weekly Schedule
+              {t.serviceSchedule.viewFullSchedule}
             </Link>
           </motion.div>
         </motion.div>

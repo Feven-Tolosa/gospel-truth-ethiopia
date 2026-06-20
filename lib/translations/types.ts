@@ -61,4 +61,17 @@ export type Translation = {
     title: string
     description: string
   }
+  serviceSchedule: {
+    label: string
+    title: string
+    description: string
+    viewFullSchedule: string
+  }
+  visit: {
+    label: string
+    title: string
+    description: string
+    planVisit: string
+    contactUs: string
+  }
 }

@@ -74,4 +74,19 @@ export const en: Translation = {
     description:
       'Faithful biblical preaching and teaching from Dawit Fassil Ministries.',
   },
+  serviceSchedule: {
+    label: 'Service Schedule',
+    title: 'Join Us for Worship',
+    description:
+      "Sunday is our main gathering — worship, the Lord's Supper, and Bible teaching. We also meet every evening of the week.",
+    viewFullSchedule: 'View Full Weekly Schedule',
+  },
+  visit: {
+    label: 'Come & See',
+    title: 'You Are Welcome Here',
+    description:
+      "Whether you are exploring Christianity, seeking a church home, or desiring deeper fellowship in Christ, we invite you to worship with us and hear the life-changing truth of God's Word.",
+    planVisit: 'Plan Your Visit',
+    contactUs: 'Contact Us',
+  },
 }

@@ -71,4 +71,19 @@ export const om: Translation = {
     description:
       "Tajaajila Daawit Faasiil (Dawit Fassil Ministries) irraa lallaba fi barsiisa Macaafa Qulqulluu amanamaa ta'e.",
   },
+  serviceSchedule: {
+    label: 'Sagantaa Tajaajilaa',
+    title: 'Waqeffannaaf Nu Wajjin Dabalami',
+    description:
+      "Dilbanni walga'ii keenya isa gudዳadha — waqeffannaa, Irbaata Gooftaa, fi barsiisa Macaafa Qulqulluu. Akkasumas torban keessatti galgala galgala hunda ni wal argina.",
+    viewFullSchedule: 'Sagantaa Torbania Guutuu Ilaali',
+  },
+  visit: {
+    label: 'Kottaa Ilaalaa',
+    title: 'Asitti Baga Nagaan Dhuftan',
+    description:
+      "Kiristaanummaa qorachaa yoo jirtan, waldaa mootummaa barbaadaa yoo jirtan, yookaan Kiristoos keessatti gamtaa gadi fageenya qabu barbaaddan, nu waliin waaqeffachuufii fi dhugaa Dubbii Waaqayyoo jireenya jijjiiru dhaga'uuf isin affeerra.",
+    planVisit: 'Daawwannaa Keessan Karoorfadhaa',
+    contactUs: 'Nu Qunnamaa',
+  },
 }
