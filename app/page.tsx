@@ -11,10 +11,10 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <WelcomeSection />
-      <SchedulePreview />
       <PastorMessage />
-      <SermonsPreview />
       <BeliefSection />
+      <SermonsPreview />
+      <SchedulePreview />
       <VisitSection />
     </main>
   )
