@@ -25,4 +25,20 @@ export type Translation = {
     serviceTimes: string
     WatchSermons: string
   }
+  welcome: {
+    bannerLabel: string
+    bannerTitle: string
+
+    whoWeAre: string
+    title: string
+
+    paragraph1: string
+    paragraph2: string
+    paragraph3: string
+    paragraph4: string
+
+    regionsServed: string
+    livesChanged: string
+    gospelProclaimed: string
+  }
 }

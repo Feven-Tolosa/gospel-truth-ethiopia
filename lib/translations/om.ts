@@ -28,4 +28,24 @@ export const om: Translation = {
     serviceTimes: 'Sa’aatii Tajaajilaa',
     WatchSermons: 'Lallaboota',
   },
+  welcome: {
+    bannerLabel: 'Baga Nagaan Gara Waldaa Dhugaa Wangeelaa Dhuftan',
+    bannerTitle: 'Dhugaa Dubbii Waaqayyoo Labsaa Jiru',
+
+    whoWeAre: 'Nuti Eenyu',
+    title: 'Waldaa Dubbii Waaqayyoo Irratti Ijaaramte',
+
+    paragraph1:
+      'Waldaa Kiristaanaa Dhugaa Wangelaa waldaa wangeelaawaa utubaawwan riqaa amantii gurguddoo, Sadanummaa Qulqulluu, gooftummaa fi eenyummaa Yesuus Kiristos, aboo Macaafa Qulqulluu, wangela ayyaanaa, dhiifama cubbuu, deebi’anii dhufuu Kiristos fi firdiidhufutti amantudha',
+    paragraph2:
+      'Waldaan Kiristaanaa kun bulchiinsa jaarsoliin kan hoogganamtu yoo ta’u; tajaajiltoonni dubbii hundi fi miseensonni hafuuraa hooggana jaarsolii jalatti gaggeeffamu.',
+    paragraph3:
+      'Waldaan Kiristaanaa kun Itoophiyaa Gama Kibbaa, Kibba-Lixaa fi Lixaa keessatti waldaalee (walga’iiwwan) naannoo qabdi.',
+    paragraph4:
+      'Kaayyoon guddaan waldaa kiristaanaa kanaa wangeela sodaa tokko malee fi ifatti lallabuu; Kiristos giddu-galeessa gochuu fi Isa qofa saaxiluu (mul’isuu) fi ulfina kennuufi; akkasumas barumsa abbootii keenyaa rakkina danda’uu fi gatii kaffaluun ilmaan namootaaf dabarsuudha. 2 Qorontos 4:1–18.',
+
+    regionsServed: 'Naannolee Tajaajilamanii',
+    livesChanged: 'Jireenyota Jijjiiraman',
+    gospelProclaimed: 'Wangeela Labsame',
+  },
 }

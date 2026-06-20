@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useLanguage } from '@/context/language-context'
+import { translations } from '@/lib/translations'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -15,6 +17,8 @@ const fadeUp = {
 }
 
 export default function WelcomeSection() {
+  const { locale } = useLanguage()
+  const t = translations[locale]
   return (
     <section className='relative overflow-hidden bg-navy'>
       {/* Background Accent */}
@@ -49,11 +53,11 @@ export default function WelcomeSection() {
           className='absolute bottom-8 left-1/6 hidden w-full max-w-7xl -translate-x-1/2 px-6 md:block'
         >
           <div className='section-label mb-3 text-white/80'>
-            Welcome to Gospel Truth Church
+            {t.welcome.bannerLabel}h
           </div>
 
           <h3 className='max-w-3xl font-serif text-3xl font-bold text-white md:text-3xl lg:text-5xl'>
-            Proclaiming the Truth of God&apos;s Word
+            {t.welcome.bannerTitle}
           </h3>
         </motion.div>
       </div>
@@ -68,10 +72,10 @@ export default function WelcomeSection() {
             whileInView='visible'
             viewport={{ once: true }}
           >
-            <div className='section-label mb-4'>Who We Are</div>
+            <div className='section-label mb-4'> {t.welcome.whoWeAre}</div>
 
             <h2 className='mb-6 section-title font-serif text-3xl font-semibold leading-tight text-white lg:text-4xl'>
-              A Church Built on the Word of God
+              {t.welcome.title}
             </h2>
 
             <motion.p
@@ -81,11 +85,7 @@ export default function WelcomeSection() {
               transition={{ delay: 0.1 }}
               viewport={{ once: true }}
             >
-              The Gospel Truth Church is an evangelical church that believes in
-              the main pillars of faith, the Holy Trinity, the deity and person
-              of Jesus Christ, the authority of the Bible, the gospel of grace,
-              the forgiveness of sins, the second coming, and the coming
-              judgment.
+              {t.welcome.paragraph1}
             </motion.p>
 
             <motion.p
@@ -95,9 +95,7 @@ export default function WelcomeSection() {
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              The church is governed by the administration of elders; all
-              ministers of the word and spiritual members are led under the
-              leadership of the elders.
+              {t.welcome.paragraph2}
             </motion.p>
 
             <motion.p
@@ -107,8 +105,7 @@ export default function WelcomeSection() {
               transition={{ delay: 0.2 }}
               viewport={{ once: true }}
             >
-              It has local congregations in the South, Southwest, and West
-              Ethiopia.
+              {t.welcome.paragraph3}
             </motion.p>
             <motion.p
               className='max-w-2xl section-subtitle'
@@ -117,10 +114,7 @@ export default function WelcomeSection() {
               transition={{ delay: 0.4 }}
               viewport={{ once: true }}
             >
-              The main purpose of the church is to preach the gospel without
-              fear and openly; to make Christ the center and reveal and honor
-              Him alone; to deliver the teachings of our fathers to mankind by
-              suffering and paying the price. 2 Corinthians 4:1–18.
+              {t.welcome.paragraph4}
             </motion.p>
           </motion.div>
 
@@ -136,18 +130,9 @@ export default function WelcomeSection() {
             className='grid grid-cols-3 gap-6 border-t border-l-gold-light dark:border-white/10  pt-8 lg:grid-cols-1 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0 '
           >
             {[
-              {
-                number: '3+',
-                label: 'Regions Served',
-              },
-              {
-                number: '∞',
-                label: 'Lives Changed',
-              },
-              {
-                number: '1',
-                label: 'Gospel Proclaimed',
-              },
+              { number: '3+', label: t.welcome.regionsServed },
+              { number: '∞', label: t.welcome.livesChanged },
+              { number: '1', label: t.welcome.gospelProclaimed },
             ].map((stat) => (
               <motion.div
                 key={stat.label}
