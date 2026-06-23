@@ -139,8 +139,8 @@ export const am: Translation = {
   },
   sermons: {
     playlistsLabel: 'የስብከት ዝርዝሮች',
-    playlistsTitle: 'የስብከት ተከታታይ እና ስብስቦች',
-    playlistsDescription: 'የተለያዩ የትምህርት ተከታታዮችን እና የተመረጡ ስብከቶችን ይመልከቱ።',
+    playlistsTitle: 'ተከታታይ የስብከት እና ስብስቦች',
+    playlistsDescription: 'የተለያዩ ተከታታይ ትምህርቶች እና የተመረጡ ስብከቶችን ይመልከቱ።',
     videos: 'ቪዲዮዎች',
     teachings: 'ትምህርቶች',
   },
