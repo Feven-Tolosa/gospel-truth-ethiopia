@@ -24,12 +24,25 @@ export default function Error({
             your internet connection and try again later.
           </p>
 
-          <Link
-            href='/'
-            className='inline-flex rounded-lg bg-gold px-6 py-3 font-medium text-navy transition hover:bg-gold-light'
-          >
-            Return Home
-          </Link>
+          <div className='flex flex-wrap justify-center gap-4'>
+            <Link
+              href='/playlists'
+              className='rounded-lg bg-gold px-6 py-3 font-medium text-navy transition hover:bg-gold-light'
+            >
+              Try Again
+            </Link>
+
+            <Link
+              href='/'
+              className='rounded-lg border border-gold px-6 py-3 font-medium text-navy-light transition hover:bg-gold/10 dark:text-white'
+            >
+              Return Home
+            </Link>
+          </div>
+
+          {process.env.NODE_ENV === 'development' && (
+            <p className='mt-6 text-sm text-red-500'>{error.message}</p>
+          )}
         </div>
       </section>
     </main>

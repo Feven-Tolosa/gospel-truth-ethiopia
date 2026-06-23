@@ -7,11 +7,18 @@ export const metadata = {
 }
 
 export default async function PlaylistsPage() {
-  const playlists = await getPlaylists()
+  let playlists
+
+  try {
+    playlists = await getPlaylists()
+  } catch (error) {
+    console.error('Failed to fetch playlists:', error)
+    throw new Error('Failed to load sermon playlists')
+  }
 
   return (
     <main className='pt-[70px]'>
-      <section className='px-6 py-16 bg-gold-pale dark:bg-navy'>
+      <section className='bg-gold-pale px-6 py-16 dark:bg-navy'>
         <div className='mx-auto max-w-7xl'>
           <div className='mb-10 text-center'>
             <div className='section-label justify-center'>Playlists</div>
@@ -30,7 +37,6 @@ export default async function PlaylistsPage() {
               <Link
                 key={playlist.id}
                 href={`/playlists/${playlist.id}`}
-                rel='noopener noreferrer'
                 className='group overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-white/10 dark:bg-navy'
               >
                 <div className='relative h-52 overflow-hidden'>
