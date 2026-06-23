@@ -157,4 +157,12 @@ export const en: Translation = {
     ctaDescription:
       "Dive into our collection of biblical resources and strengthen your faith. Whether you're seeking to deepen your understanding of Scripture or looking for practical guidance, our resources are here to support your spiritual journey.",
   },
+  sermons: {
+    playlistsLabel: 'Playlists',
+    playlistsTitle: 'Sermon Series & Collections',
+    playlistsDescription:
+      'Browse teaching series and curated sermon collections.',
+    videos: 'Videos',
+    teachings: 'teachings',
+  },
 }

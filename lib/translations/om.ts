@@ -143,4 +143,12 @@ export const om: Translation = {
     ctaDescription:
       'Walitti qabiinsa maddoota Macaafa Qulqulluu keenya keessa lixuun amantii keessan jabeessaa. Hubannaa keessan gadi fageessuuf yookiin qajeelfama hojiirra oolu barbaaddanii, maddoonni keenya jireenya hafuuraa keessan deeggaruuf as jiru.',
   },
+  sermons: {
+    playlistsLabel: 'Tarreewwan Barsiisaa',
+    playlistsTitle: 'Walitti Qabamoota fi Tartiiba Lallabaa',
+    playlistsDescription:
+      'Tartiibota barsiisaa fi walitti qabamoota lallabaa keessaa filataman ilaalaa.',
+    videos: 'Viidiyoo',
+    teachings: 'Barsiisota',
+  },
 }

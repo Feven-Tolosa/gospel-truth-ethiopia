@@ -130,4 +130,11 @@ export type Translation = {
     ctaTitle: string
     ctaDescription: string
   }
+  sermons: {
+    playlistsLabel: string
+    playlistsTitle: string
+    playlistsDescription: string
+    videos: string
+    teachings: string
+  }
 }
