@@ -137,4 +137,15 @@ export type Translation = {
     videos: string
     teachings: string
   }
+  beliefs: {
+    label: string
+    title: string
+    description: string
+    doctrinalPosition: string
+
+    items: {
+      title: string
+      body: string
+    }[]
+  }
 }

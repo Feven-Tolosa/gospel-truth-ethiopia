@@ -151,4 +151,41 @@ export const om: Translation = {
     videos: 'Viidiyoo',
     teachings: 'Barsiisota',
   },
+  beliefs: {
+    label: 'Kan Amannu',
+
+    title: 'Bu’uura Amantii Keenya',
+
+    description:
+      'Dhugaa Dubbii Waaqayyoo isa hin jijjiiramne irratti dhaabannee amantii Kiristaanaa isa dhugaa cimnee qabanna.',
+
+    doctrinalPosition: 'Ejjannoo Amantii',
+
+    items: [
+      {
+        title: 'Tokkummaa Qulqulluu',
+        body: 'Waaqni tokko bara baraan Nama sadii jechuun Abbaa, Ilma fi Hafuura Qulqulluu keessatti jiraata; hundi isaanii humnaa fi ulfinaan walqixxaadha.',
+      },
+      {
+        title: 'Waaqummaa Kiristoos',
+        body: 'Yesuus Kiristoos guutumaan guutuutti Waaqa fi nama dha. Inni durba irraa dhalate, cubbuu malee jiraate, cubbuu keenyaaf duʼe, mootummaa duʼaa irraas qaamaan kaʼe.',
+      },
+      {
+        title: 'Abbaa Taayitaa Macaafa Qulqulluu',
+        body: 'Macaafni Qulqulluun Dubbii Waaqayyoo hafuuraan kennamee fi dogoggora hin qabne dha; dhimma amantii fi jireenya hundumaa irratti mootummaa ol’aanaa qaba.',
+      },
+      {
+        title: 'Wangeela Ayyaanaa',
+        body: 'Fayyinni ayyaana qofaan, amantii qofaan, karaa Kiristoos qofaan argama; hojii ykn ga’umsa namaatiin miti (Efesoon 2:8–9).',
+      },
+      {
+        title: 'Dhiifama Cubbuu',
+        body: 'Karaa aarsaa araaraa Kiristoosiin Waaqayyo warra qalbii jijjiiratanii Yesuusitti amananiif cubbuu isaanii guutumaan guutuutti ni dhiisa.',
+      },
+      {
+        title: 'Deebii Kiristoos',
+        body: 'Yesuus Kiristoos qaamaan fi ifatti deebi’ee ni dhufa; warra jiraatanii fi warra duʼan ni murteessa, mootummaa isaa bara baraa ni hundeessa.',
+      },
+    ],
+  },
 }

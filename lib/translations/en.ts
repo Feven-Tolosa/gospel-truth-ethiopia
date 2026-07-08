@@ -165,4 +165,41 @@ export const en: Translation = {
     videos: 'Videos',
     teachings: 'teachings',
   },
+  beliefs: {
+    label: 'What We Believe',
+
+    title: 'Our Doctrinal Foundation',
+
+    description:
+      'Standing on the unchanging truths of Scripture, we hold fast to the historic Christian faith.',
+
+    doctrinalPosition: 'Doctrinal Position',
+
+    items: [
+      {
+        title: 'The Holy Trinity',
+        body: 'One God eternally existing in three persons: Father, Son, and Holy Spirit — equal in power and glory.',
+      },
+      {
+        title: 'The Divinity of Christ',
+        body: 'Jesus Christ is fully God and fully man, born of a virgin, who lived sinlessly, died for our sins, and rose bodily from the dead.',
+      },
+      {
+        title: 'Authority of Scripture',
+        body: 'The Bible is the inspired, inerrant Word of God — the supreme and final authority in all matters of faith and life.',
+      },
+      {
+        title: 'The Gospel of Grace',
+        body: 'Salvation is by grace alone, through faith alone, in Christ alone — not by human merit or works (Ephesians 2:8–9).',
+      },
+      {
+        title: 'Forgiveness of Sins',
+        body: "Through Christ's atoning sacrifice, God freely and fully forgives all who repent and believe in Jesus as Lord and Savior.",
+      },
+      {
+        title: 'The Second Coming',
+        body: 'Jesus Christ will return bodily and visibly to judge the living and the dead and to establish His eternal kingdom.',
+      },
+    ],
+  },
 }

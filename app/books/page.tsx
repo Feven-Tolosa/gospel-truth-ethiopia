@@ -5,12 +5,6 @@ import { Download, BookOpen } from 'lucide-react'
 import { books } from '@/lib/books-data'
 import { useLanguage } from '@/context/language-context'
 import { translations } from '@/lib/translations'
-// export const metadata = {
-//   title: 'Books & Resources | Gospel Truth Church Ethiopia',
-//   description:
-//     'Download biblical books, study guides, and Christian resources.',
-// }
-
 export default function BooksPage() {
   const { locale } = useLanguage()
   const t = translations[locale]
