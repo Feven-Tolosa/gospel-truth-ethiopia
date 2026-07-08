@@ -8,23 +8,23 @@ export default function LanguageSwitcher() {
 
   return (
     <div className='relative'>
-      <div className='flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-2 text-white'>
+      <div className='flex items-center gap-2 rounded-md border border-white/15 text-white/80 transition hover:border-gold hover:text-gold px-3 py-2 '>
         <Languages size={16} />
 
         <select
           value={locale}
           onChange={(e) => setLocale(e.target.value as 'en' | 'am' | 'om')}
-          className='bg-transparent outline-none'
+          className='bg-transparent outline-none border-white/15 text-white/80 transition hover:border-gold hover:text-gold'
         >
-          <option value='en' className='text-black'>
+          <option value='en' className='bg-navy text-white/80 hover:text-gold'>
             En
           </option>
 
-          <option value='am' className='text-black'>
+          <option value='am' className='bg-navy text-white/80 hover:text-gold'>
             አማ
           </option>
 
-          <option value='om' className='text-black'>
+          <option value='om' className='bg-navy text-white/80 hover:text-gold'>
             Om
           </option>
         </select>

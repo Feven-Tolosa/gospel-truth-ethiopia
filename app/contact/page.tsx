@@ -126,7 +126,7 @@ export default function ContactPage() {
               </p>
 
               <p className='mt-2 text-sm text-neutral-500 dark:text-neutral-400'>
-                We warmly welcome you to worship with us every week.
+                We warmly welcome you to worship with us all the week.
               </p>
             </div>
           </div>
