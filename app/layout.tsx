@@ -25,9 +25,73 @@ const notoEthiopic = Noto_Serif_Ethiopic({
 })
 
 export const metadata: Metadata = {
-  title: 'Gospel Truth Church Ethiopia | የወንጌል እውነት ቤተ ክርስቲያን',
+  metadataBase: new URL('https://gospel-truth-ethiopia.vercel.app/'),
+
+  title: {
+    default: 'Gospel Truth Church Ethiopia | የወንጌል እውነት ቤተ ክርስቲያን',
+    template: '%s | Gospel Truth Church Ethiopia',
+  },
+
   description:
-    'An evangelical church in Jimma, Ethiopia committed to expository teaching, sound doctrine, and the bold proclamation of the gospel across Southern, Southwestern, and Western Ethiopia.',
+    'An evangelical church in Jimma, Ethiopia committed to expository teaching, sound doctrine, and the bold proclamation of the Gospel.',
+
+  keywords: [
+    'Gospel Truth Church',
+    'Gospel Truth Church Ethiopia',
+    'Church Ethiopia',
+    'Jimma Church',
+    'Bible Teaching',
+    'Christian Church Ethiopia',
+    'Dawit Fassil Ministries',
+    'Dawit Fassil ',
+    'Gospel Truth Church Ethiopia',
+    'የወንጌል እውነት ቤተ ክርስቲያን',
+    'የወንጌል እውነት',
+    'የወንጌል እውነት ቤተ ክርስቲያን ጅማ',
+    'የወንጌል እውነት ቤተ ክርስቲያን ጅማ ኢትዮጵያ',
+    'ዳዊት ፋሲል ሚኒስትሪዎች',
+    'ዳዊት ፋሲል',
+  ],
+
+  openGraph: {
+    title: 'Gospel Truth Church Ethiopia',
+    description:
+      'Join us for biblical teaching, worship, discipleship, and fellowship.',
+
+    url: 'https://gospel-truth-ethiopia.vercel.app/',
+
+    siteName: 'Gospel Truth Church Ethiopia',
+
+    locale: 'en_US',
+
+    type: 'website',
+
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Gospel Truth Church Ethiopia',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+
+    title: 'Gospel Truth Church Ethiopia',
+
+    description:
+      'Biblical teaching, worship, and discipleship in Jimma, Ethiopia.',
+
+    images: ['/og-image.jpg'],
+  },
+
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
