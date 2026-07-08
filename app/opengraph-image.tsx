@@ -12,9 +12,9 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function Image() {
-  const logo = new URL('../public/logo.png', import.meta.url)
+  const logo = new URL('/logo.png', import.meta.url)
 
-  const building = new URL('../public/church-building.jpg', import.meta.url)
+  const building = new URL('/church-building.jpg', import.meta.url)
 
   return new ImageResponse(
     <div
