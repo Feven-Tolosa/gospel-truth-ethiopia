@@ -37,13 +37,14 @@ export default function VisitSection() {
 
         {/* CTA Buttons */}
         <div className='flex flex-wrap justify-center gap-4'>
-          <Link
-            href='/schedule'
+          <a
+            href='https://maps.app.goo.gl/AXft8Dqg5noqpCFZ6'
+            target='_blank'
             className='group inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3 font-medium text-navy transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gold/25'
           >
             <MapPin size={18} />
-            {t.visit.contactUs}
-          </Link>
+            {t.visit.planVisit}
+          </a>
 
           <Link
             href='/contact'
