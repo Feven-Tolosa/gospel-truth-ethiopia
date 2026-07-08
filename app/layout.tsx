@@ -25,7 +25,9 @@ const notoEthiopic = Noto_Serif_Ethiopic({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gospel-truth-ethiopia.vercel.app/'),
+  metadataBase: new URL('https://gospeltruth.vercel.app/'),
+
+  applicationName: 'Gospel Truth Church Ethiopia',
 
   title: {
     default: 'Gospel Truth Church Ethiopia | የወንጌል እውነት ቤተ ክርስቲያን',
@@ -43,32 +45,63 @@ export const metadata: Metadata = {
     'Bible Teaching',
     'Christian Church Ethiopia',
     'Dawit Fassil Ministries',
-    'Dawit Fassil ',
-    'Gospel Truth Church Ethiopia',
     'የወንጌል እውነት ቤተ ክርስቲያን',
     'የወንጌል እውነት',
-    'የወንጌል እውነት ቤተ ክርስቲያን ጅማ',
-    'የወንጌል እውነት ቤተ ክርስቲያን ጅማ ኢትዮጵያ',
-    'ዳዊት ፋሲል ሚኒስትሪዎች',
     'ዳዊት ፋሲል',
   ],
 
+  authors: [
+    {
+      name: 'Gospel Truth Church Ethiopia',
+    },
+  ],
+
+  creator: 'Gospel Truth Church Ethiopia',
+
+  publisher: 'Gospel Truth Church Ethiopia',
+
+  category: 'Religion',
+
+  alternates: {
+    canonical: '/',
+  },
+
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+
   openGraph: {
-    title: 'Gospel Truth Church Ethiopia',
-    description:
-      'Join us for biblical teaching, worship, discipleship, and fellowship.',
-
-    url: 'https://gospel-truth-ethiopia.vercel.app/',
-
-    siteName: 'Gospel Truth Church Ethiopia',
+    type: 'website',
 
     locale: 'en_US',
 
-    type: 'website',
+    url: 'https://gospeltruth.vercel.app',
+
+    title: 'Gospel Truth Church Ethiopia',
+
+    description:
+      'Join us for biblical teaching, worship, discipleship, and fellowship.',
+
+    siteName: 'Gospel Truth Church Ethiopia',
 
     images: [
       {
-        url: '/og-image.png',
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'Gospel Truth Church Ethiopia',
@@ -84,13 +117,27 @@ export const metadata: Metadata = {
     description:
       'Biblical teaching, worship, and discipleship in Jimma, Ethiopia.',
 
-    images: ['/og-image.png'],
+    images: ['/opengraph-image'],
   },
 
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: [
+      {
+        url: '/favicon.ico',
+      },
+    ],
+
+    shortcut: ['/favicon.ico'],
+
+    apple: [
+      {
+        url: '/apple-touch-icon.png',
+      },
+    ],
+  },
+
+  verification: {
+    google: '', // Add your Google Search Console verification code later
   },
 }
 
