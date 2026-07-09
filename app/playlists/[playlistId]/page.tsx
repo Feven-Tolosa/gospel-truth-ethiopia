@@ -14,10 +14,10 @@ export default async function PlaylistDetailPage({
     <main className='pt-[70px]'>
       <section className='bg-navy px-6 py-20 text-center'>
         <div className='section-label justify-center'>Playlist</div>
-
         <h1 className='font-serif text-4xl font-bold text-white'>
           Sermon Series
         </h1>
+        <p> curated sermon collections</p>
       </section>
 
       <section className='px-6 py-20'>

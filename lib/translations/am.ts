@@ -138,8 +138,8 @@ export const am: Translation = {
       'ቅዱሳን መጻሕፍትን የበለጠ ለመረዳት እየፈለጉም ይሁን ተግባራዊ መመሪያዎችን እየፈለጉ፣ የእኛ ግብዓቶች መንፈሳዊ ጉዞዎን ለመደገፍ እዚህ አሉ።',
   },
   sermons: {
-    playlistsLabel: 'የስብከት ዝርዝሮች',
-    playlistsTitle: 'ተከታታይ የስብከት እና ስብስቦች',
+    playlistsLabel: 'የትምህርት ዝርዝሮች',
+    playlistsTitle: 'የተከታታይ ትምህርቶች ስብስብ',
     playlistsDescription: 'የተለያዩ ተከታታይ ትምህርቶች እና የተመረጡ ስብከቶችን ይመልከቱ።',
     videos: 'ቪዲዮዎች',
     teachings: 'ትምህርቶች',

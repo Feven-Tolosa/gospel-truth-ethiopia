@@ -129,7 +129,7 @@ export const en: Translation = {
   },
   playlists: {
     label: 'Playlists',
-    title: 'Sermon Series & Collections',
+    title: 'Sermon Series',
     description: 'Browse teaching series and curated sermon collections.',
 
     videos: 'Videos',
