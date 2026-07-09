@@ -6,6 +6,7 @@ import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
 import { WhatsAppFloat } from '@/components/whatsapp-float'
 import { LanguageProvider } from '@/context/language-context'
+
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -25,7 +26,7 @@ const notoEthiopic = Noto_Serif_Ethiopic({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gospeltruth.vercel.app/'),
+  metadataBase: new URL('https://gospeltruth.vercel.app'),
 
   applicationName: 'Gospel Truth Church Ethiopia',
 
@@ -50,16 +51,9 @@ export const metadata: Metadata = {
     'ዳዊት ፋሲል',
   ],
 
-  authors: [
-    {
-      name: 'Gospel Truth Church Ethiopia',
-    },
-  ],
-
+  authors: [{ name: 'Gospel Truth Church Ethiopia' }],
   creator: 'Gospel Truth Church Ethiopia',
-
   publisher: 'Gospel Truth Church Ethiopia',
-
   category: 'Religion',
 
   alternates: {
@@ -75,7 +69,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-
     googleBot: {
       index: true,
       follow: true,
@@ -87,53 +80,35 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: 'website',
-
     locale: 'en_US',
-
     url: 'https://gospeltruth.vercel.app',
-
     title: 'Gospel Truth Church Ethiopia',
-
     description:
       'Join us for biblical teaching, worship, discipleship, and fellowship.',
-
     siteName: 'Gospel Truth Church Ethiopia',
-
     images: [
       {
-        url: '/og-image.png',
+        url: '/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Gospel Truth Church Ethiopia',
+        type: 'image/png',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-
     title: 'Gospel Truth Church Ethiopia',
-
     description:
       'Biblical teaching, worship, and discipleship in Jimma, Ethiopia.',
-
-    images: ['/og-image.png'],
+    images: ['/opengraph-image.png'],
   },
 
   icons: {
-    icon: [
-      {
-        url: '/favicon.ico',
-      },
-    ],
-
+    icon: [{ url: '/favicon.ico' }],
     shortcut: ['/favicon.ico'],
-
-    apple: [
-      {
-        url: '/apple-touch-icon.png',
-      },
-    ],
+    apple: [{ url: '/apple-touch-icon.png' }],
   },
 
   verification: {
