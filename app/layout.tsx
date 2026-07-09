@@ -101,7 +101,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: '/opengraph-image',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Gospel Truth Church Ethiopia',
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
     description:
       'Biblical teaching, worship, and discipleship in Jimma, Ethiopia.',
 
-    images: ['/opengraph-image'],
+    images: ['/og-image.png'],
   },
 
   icons: {
