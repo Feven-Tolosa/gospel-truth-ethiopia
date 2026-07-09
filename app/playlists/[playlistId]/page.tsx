@@ -17,10 +17,13 @@ export default async function PlaylistDetailPage({
         <h1 className='font-serif text-4xl font-bold text-white'>
           Sermon Series
         </h1>
-        <p> curated sermon collections</p>
+        <p className='mt-3 text-muted-foreground text-white'>
+          {' '}
+          curated sermon collections
+        </p>
       </section>
 
-      <section className='px-6 py-20'>
+      <section className='px-6 py-10'>
         <div className='mx-auto max-w-7xl'>
           <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'>
             {videos.map((video) => (
