@@ -32,7 +32,7 @@ export default function AboutPage() {
       <p className='text-center md:hidden text-gold font-serif '>
         {t.about.welcome}
       </p>
-      <h3 className='pt-2 text-center text-white/80 font-serif text-2xl font-bold text-white md:hidden'>
+      <h3 className='pt-2 text-center text-black dark:text-white/80 font-serif text-2xl font-bold md:hidden'>
         {t.about.heroTitle}
       </h3>
       <section className='bg-navy px-4 sm:py-2 md:pt-20  text-center'>
