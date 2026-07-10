@@ -27,9 +27,15 @@ export default function AboutPage() {
         </motion.div>
 
         <div className='absolute inset-0 bg-navy/20' />
-        <div className='absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent' />
+        <div className='absolute inset-x-0 bottom-0 h-1/3 md:h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent' />
       </div>
-      <section className='bg-navy px-4 py-16 text-center'>
+      <p className='text-center md:hidden text-gold font-serif '>
+        {t.about.welcome}
+      </p>
+      <h3 className='pt-2 text-center text-white/80 font-serif text-2xl font-bold text-white md:hidden'>
+        {t.about.heroTitle}
+      </h3>
+      <section className='bg-navy px-4 sm:py-2 md:pt-20  text-center'>
         {/* Banner Text */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -38,9 +44,11 @@ export default function AboutPage() {
           transition={{ duration: 1 }}
           className='absolute bottom-8 text-center w-full max-w-7xl -translate-x-1/2 px-6 md:block pt-12'
         >
-          <p className=' py-3  text-gold font-serif '>{t.about.welcome}</p>
+          <p className='hidden md:block py-3  text-gold font-serif '>
+            {t.about.welcome}
+          </p>
 
-          <h3 className='pb-16 text-white/80 font-serif text-3xl font-bold text-white sm:text-1xl md:text-3xl lg:text-5xl'>
+          <h3 className='pb-16 text-white/80 font-serif text-3xl font-bold text-white hidden md:block md:text-3xl lg:text-5xl'>
             {t.about.heroTitle}
           </h3>
         </motion.div>
