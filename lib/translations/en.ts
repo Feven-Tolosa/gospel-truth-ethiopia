@@ -65,7 +65,7 @@ export const en: Translation = {
     label: 'What We Believe',
     title: 'Our Doctrinal Foundation',
     description:
-      'Standing firmly upon the eternal truth of God’s Word, we embrace the historic Christian faith and proclaim the Gospel of Jesus Christ with conviction and grace.',
+      'Standing firmly upon the eternal truth of God’s Word, we embrace the Christian faith and proclaim the Gospel of Jesus Christ with conviction and grace.',
     readFullBeliefs: 'Read Our Full Beliefs',
   },
   latestSermons: {
