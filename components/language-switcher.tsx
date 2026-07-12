@@ -25,7 +25,7 @@ export default function LanguageSwitcher() {
           </option>
 
           <option value='om' className='bg-navy text-white/80 hover:text-gold'>
-            Om
+            AO
           </option>
         </select>
       </div>
