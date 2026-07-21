@@ -4,7 +4,6 @@ import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
-import { WhatsAppFloat } from '@/components/whatsapp-float'
 import { LanguageProvider } from '@/context/language-context'
 
 const inter = Inter({
@@ -112,7 +111,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: '', // Add Google Search Console verification code 
+    google: '', // Add Google Search Console verification code
   },
 }
 
@@ -131,7 +130,6 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
-            {/* <WhatsAppFloat /> */}
           </ThemeProvider>
         </LanguageProvider>
       </body>
