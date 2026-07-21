@@ -112,7 +112,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: '', // Add your Google Search Console verification code later
+    google: '', // Add Google Search Console verification code 
   },
 }
 
