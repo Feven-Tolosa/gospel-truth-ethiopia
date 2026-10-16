@@ -16,15 +16,6 @@ export const weeklySchedule: ServiceItem[] = [
     nameAm: 'አምልኮና ጌታ እራት',
     time: '9:30 AM – 12:00 PM',
   },
-  // {
-  //   day: 'Sunday',
-  //   dayAm: 'እሑድ',
-  //   name: 'Choir Worship',
-  //   nameAm: 'የዘማሪዎች አምልኮ',
-  //   time: '5:00 PM – 6:00 PM',
-  //   note: 'Leads into evening Bible teaching',
-  //   noteAm: 'ከዚያ ቀጥሎ የቃሉ ትምህርት ይከተላል',
-  // },
   {
     day: 'Sunday',
     dayAm: 'እሑድ',
@@ -56,9 +47,11 @@ export const weeklySchedule: ServiceItem[] = [
   {
     day: 'Thursday',
     dayAm: 'ሐሙስ',
-    name: 'Choir Practice',
-    nameAm: 'የዘማሪዎች ልምምድ',
-    time: '6:00 PM – 2:00 AM',
+    name: 'Youth Fellowship',
+    nameAm: 'የወጣቶች ኅብረት',
+    time: '4:00 PM – 6:00 PM',
+    note: 'Worship, preaching, and a solo song',
+    noteAm: 'አምልኮ፣ ስብከት እና የሶሎ መዝሙር',
   },
   {
     day: 'Friday',
@@ -70,11 +63,9 @@ export const weeklySchedule: ServiceItem[] = [
   {
     day: 'Saturday',
     dayAm: 'ቅዳሜ',
-    name: 'Youth Fellowship',
-    nameAm: 'የወጣቶች ኅብረት',
-    time: '4:00 PM – 6:00 PM',
-    note: 'Worship, preaching, and a solo song',
-    noteAm: 'አምልኮ፣ ስብከት እና የሶሎ መዝሙር',
+    name: 'Choir Practice',
+    nameAm: 'የዘማሪዎች ልምምድ',
+    time: '6:00 PM – 2:00 AM',
   },
   {
     day: 'Saturday',
