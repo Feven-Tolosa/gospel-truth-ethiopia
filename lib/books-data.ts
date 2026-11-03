@@ -1,5 +1,7 @@
 // lib/books-data.ts
 
+import { title } from 'process'
+
 export const books = [
   {
     title: 'ሕያው ቃል',
@@ -125,5 +127,54 @@ export const books = [
       'መስጠት፡ የእግዚአብሔር ለዓላዊነት፣ መጋቢነት፣ ገዢነት እውቅና መስጠትእና እርሱን የማክበርና የመፍራት ልምምዴ ነው፡፡ እግዚአብሔር ከማንም ምንም ወስዶ፤ ወይም ተቀብሎ አያውቅም። ሁሉ የእርሱ ነውና፤ ስጦታውን ሳይሆን እግዚአብሔር የሚፈልገው ከእርሱ ጋር በትሕትና መሄዳችንን ነው',
     pdf: '/books/መስጠት.pdf',
     cover: '/image/books/መስጠት.png',
+  },
+  {
+    title: 'ስልታዊ ስነ መለኮት ቅጽ 1 ',
+    author: 'Wayne Grudem',
+    description: 'ስልታዊ ስነ መለኮት ቅጽ 1 ክፍል 1',
+    pdf: '/books/SystematicTheology1.pdf',
+    cover: '/image/books/st1.png',
+  },
+  {
+    title: 'ስልታዊ ስነ መለኮት ቅጽ 1 ',
+    author: 'Wayne Grudem',
+    description: 'ስልታዊ ስነ መለኮት ቅጽ 1 ክፍል 2',
+    pdf: '/books/SystematicTheology2.pdf',
+    cover: '/image/books/st2.png',
+  },
+  {
+    title: 'ስልታዊ ስነ መለኮት ቅጽ 1 ',
+    author: 'Wayne Grudem',
+    description: 'ስልታዊ ስነ መለኮት ቅጽ 1 ክፍል 3',
+    pdf: '/books/SystematicTheology3.pdf',
+    cover: '/image/books/st3.png',
+  },
+  {
+    title: 'ስልታዊ ስነ መለኮት ቅጽ 1 ',
+    author: 'Wayne Grudem',
+    description: 'ስልታዊ ስነ መለኮት ቅጽ 1 ክፍል 4',
+    pdf: '/books/SystematicTheology4.pdf',
+    cover: '/image/books/st4.png',
+  },
+  {
+    title: 'ስልታዊ ስነ መለኮት ቅጽ 1 ',
+    author: 'Wayne Grudem',
+    description: 'ስልታዊ ስነ መለኮት ቅጽ 1 ክፍል 5',
+    pdf: '/books/SystematicTheology5.pdf',
+    cover: '/image/books/st5.png',
+  },
+  {
+    title: 'ስልታዊ ስነ መለኮት ቅጽ 1 ',
+    author: 'Wayne Grudem',
+    description: 'ስልታዊ ስነ መለኮት ቅጽ 1 ክፍል 6',
+    pdf: '/books/SystematicTheology6.pdf',
+    cover: '/image/books/st6.png',
+  },
+  {
+    title: 'ስልታዊ ስነ መለኮት ቅጽ 1 ',
+    author: 'Wayne Grudem',
+    description: 'ስልታዊ ስነ መለኮት ቅጽ 1 ክፍል 7',
+    pdf: '/books/SystematicTheology7.pdf',
+    cover: '/image/books/st7.png',
   },
 ]
