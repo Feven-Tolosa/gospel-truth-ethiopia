@@ -17,7 +17,7 @@ export const om: Translation = {
     description:
       'Waaqeffannaa, kadhannaa fi qo’annoo Macaafa Qulqulluu keessatti nu waliin hirmaadhaa.',
     noteTitle: 'Hubachiisa',
-    note: 'Barumsi Macaafa Qulqulluu galgala Dilbataa waaqeffannaa faarfattootaa booda jalqaba. Waldaan Dargaggootaa mootummaa Waaqayyoo waaqeffannaa, lallabaa fi faarfannaa addaa qaba.',
+    note: 'Barumsi Macaafa Qulqulluu galgala Dilbataa waaqeffannaa faarfattootaa booda jalqaba.',
   },
   nav: {
     about: 'Waa’ee Keenya',

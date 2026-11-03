@@ -17,7 +17,7 @@ export const en: Translation = {
     description:
       'Join us for worship, prayer, and Bible study throughout the week.',
     noteTitle: 'Note',
-    note: "Sunday evening Bible teaching is preceded by a choir worship beginning at 5:00 PM. Saturday's Youth Fellowship includes worship, preaching, and a solo song.",
+    note: "Sunday evening Bible teaching is preceded by a choir worship beginning at 5:00 PM.",
   },
   nav: {
     about: 'About Us',
