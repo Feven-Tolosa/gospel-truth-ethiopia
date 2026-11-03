@@ -87,11 +87,11 @@ export const metadata: Metadata = {
     siteName: 'Gospel Truth Church Ethiopia',
     images: [
       {
-        url: '/opengraph-image.jpg',
+        url: '/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Gospel Truth Church Ethiopia',
-        type: 'image/jpeg',
+        type: 'image/png',
       },
     ],
   },
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
     title: 'Gospel Truth Church Ethiopia',
     description:
       'Biblical teaching, worship, and discipleship in Jimma, Ethiopia.',
-    images: ['/opengraph-image.jpg'],
+    images: ['/opengraph-image.png'],
   },
 
   icons: {
