@@ -1,10 +1,6 @@
 
 import type { Metadata } from 'next'
-import {
-  Inter,
-  Playfair_Display,
-  Noto_Serif_Ethiopic,
-} from 'next/font/google'
+
 
 import './globals.css'
 
@@ -13,27 +9,11 @@ import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
 import { LanguageProvider } from '@/context/language-context'
 
-// Fonts
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
-})
 
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  weight: ['400', '600', '700'],
-  display: 'swap',
-})
 
-const notoEthiopic = Noto_Serif_Ethiopic({
-  subsets: ['ethiopic'],
-  variable: '--font-noto-ethiopic',
-  weight: ['400', '600', '700'],
-  display: 'swap',
-})
+
+
+
 
 // Centralized site configuration
 const siteConfig = {
@@ -136,14 +116,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`
-          ${inter.variable}
-          ${playfair.variable}
-          ${notoEthiopic.variable}
-          font-sans antialiased
-        `}
-      >
+        <body
+  className={`
+    ${inter.variable}
+    ${playfair.variable}
+    font-sans antialiased
+  `}
+>
         <LanguageProvider>
           <ThemeProvider
             attribute="class"

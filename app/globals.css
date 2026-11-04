@@ -10,6 +10,14 @@ body {
   @apply bg-cream text-navy dark:bg-navy dark:text-cream;
 }
 
+:root {
+  --font-noto-ethiopic:
+    "Noto Serif Ethiopic",
+    "Noto Sans Ethiopic",
+    serif;
+}
+
+
 ::selection {
   @apply bg-gold/30;
 }
