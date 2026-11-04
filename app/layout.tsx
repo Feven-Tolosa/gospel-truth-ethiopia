@@ -1,68 +1,85 @@
+
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display, Noto_Serif_Ethiopic } from 'next/font/google'
+import {
+  Inter,
+  Playfair_Display,
+  Noto_Serif_Ethiopic,
+} from 'next/font/google'
+
 import './globals.css'
+
 import { ThemeProvider } from '@/components/theme-provider'
 import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
 import { LanguageProvider } from '@/context/language-context'
 
+// Fonts
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  weight: ['300', '400', '500', '600'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
 })
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
   weight: ['400', '600', '700'],
+  display: 'swap',
 })
 
 const notoEthiopic = Noto_Serif_Ethiopic({
   subsets: ['ethiopic'],
   variable: '--font-noto-ethiopic',
   weight: ['400', '600', '700'],
+  display: 'swap',
 })
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://gospeltruth.vercel.app'),
+// Centralized site configuration
+const siteConfig = {
+  name: 'Gospel Truth Church Ethiopia',
+  shortName: 'Gospel Truth Church',
+  url: 'https://gospeltruth.vercel.app',
+  description:
+    'Gospel Truth Church is an evangelical church in Jimma, Ethiopia, committed to biblical teaching, sound doctrine, worship, discipleship, and proclaiming the Gospel of Jesus Christ.',
+  image: '/opengraph-image.png',
+  locale: 'en_US',
+}
 
-  applicationName: 'Gospel Truth Church Ethiopia',
+// SEO Metadata
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+
+  applicationName: siteConfig.name,
 
   title: {
-    default: 'Gospel Truth Church Ethiopia | የወንጌል እውነት ቤተ ክርስቲያን',
-    template: '%s | Gospel Truth Church Ethiopia',
+    default: `${siteConfig.name} | የወንጌል እውነት`,
+    template: `%s | ${siteConfig.shortName}`,
   },
 
-  description:
-    'An evangelical church in Jimma, Ethiopia committed to expository teaching, sound doctrine, and the bold proclamation of the Gospel.',
+  description: siteConfig.description,
 
   keywords: [
     'Gospel Truth Church',
     'Gospel Truth Church Ethiopia',
-    'Church Ethiopia',
     'Jimma Church',
-    'Bible Teaching',
     'Christian Church Ethiopia',
+    'Evangelical Church Ethiopia',
+    'Bible Teaching',
+    'Biblical Preaching',
+    'Christian Discipleship',
     'Dawit Fassil Ministries',
     'የወንጌል እውነት ቤተ ክርስቲያን',
-    'የወንጌል እውነት',
     'ዳዊት ፋሲል',
   ],
 
-  authors: [{ name: 'Gospel Truth Church Ethiopia' }],
-  creator: 'Gospel Truth Church Ethiopia',
-  publisher: 'Gospel Truth Church Ethiopia',
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
   category: 'Religion',
 
   alternates: {
     canonical: '/',
-  },
-
-  formatDetection: {
-    telephone: true,
-    email: true,
-    address: true,
   },
 
   robots: {
@@ -79,56 +96,64 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: 'https://gospeltruth.vercel.app',
-    title: 'Gospel Truth Church Ethiopia',
-    description:
-      'Join us for biblical teaching, worship, discipleship, and fellowship.',
-    siteName: 'Gospel Truth Church Ethiopia',
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} | Biblical Teaching and Worship`,
+    description: siteConfig.description,
     images: [
       {
-        url: '/opengraph-image.png',
+        url: siteConfig.image,
         width: 1200,
         height: 630,
-        alt: 'Gospel Truth Church Ethiopia',
-        type: 'image/png',
+        alt: siteConfig.name,
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Gospel Truth Church Ethiopia',
-    description:
-      'Biblical teaching, worship, and discipleship in Jimma, Ethiopia.',
-    images: ['/opengraph-image.png'],
+    images: [siteConfig.image],
   },
 
   icons: {
-    icon: [{ url: '/favicon.ico' }],
-    shortcut: ['/favicon.ico'],
-    apple: [{ url: '/apple-touch-icon.png' }],
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 
-  verification: {
-    google: '', // Add Google Search Console verification code
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
   },
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${playfair.variable} ${notoEthiopic.variable} font-sans antialiased`}
+        className={`
+          ${inter.variable}
+          ${playfair.variable}
+          ${notoEthiopic.variable}
+          font-sans antialiased
+        `}
       >
         <LanguageProvider>
-          <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+          >
             <Navbar />
-            {children}
+
+            <main>{children}</main>
+
             <Footer />
           </ThemeProvider>
         </LanguageProvider>
