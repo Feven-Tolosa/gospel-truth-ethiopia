@@ -3,17 +3,36 @@ import type { MetadataRoute } from 'next'
 const SITE_URL = 'https://gospeltruth.vercel.app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    '',
-     '/about', 
-     '/playlists',
-     '/ministries',
-     '/contact',
+  return [
+    {
+      url: SITE_URL,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1,
+    },
+    {
+      url: `${SITE_URL}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/sermons`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/ministries`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
-
-  return routes.map((route) => ({
-    url: `${SITE_URL}${route}`,
-    changeFrequency: 'weekly',
-    priority: route === '' ? 1 : 0.8,
-  }))
 }
