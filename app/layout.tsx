@@ -1,27 +1,27 @@
-
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
-
+import { Inter, Playfair_Display, Noto_Serif_Ethiopic } from 'next/font/google'
 import './globals.css'
-
 import { ThemeProvider } from '@/components/theme-provider'
 import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
 import { LanguageProvider } from '@/context/language-context'
 
-// Fonts
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
+  weight: ['300', '400', '500', '600'],
 })
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
   weight: ['400', '600', '700'],
-  display: 'swap',
+})
+
+const notoEthiopic = Noto_Serif_Ethiopic({
+  subsets: ['ethiopic'],
+  variable: '--font-noto-ethiopic',
+  weight: ['400', '600', '700'],
 })
 
 // Centralized site configuration
@@ -124,20 +124,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-        <body
-  className={`
-    ${inter.variable}
-    ${playfair.variable}
-    font-sans antialiased
-  `}
->
+    <html lang='en' suppressHydrationWarning>
+      <body
+        className={`${inter.variable} ${playfair.variable} ${notoEthiopic.variable} font-sans antialiased`}
+      >
         <LanguageProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            enableSystem
-          >
+          <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
             <Navbar />
 
             <main>{children}</main>
