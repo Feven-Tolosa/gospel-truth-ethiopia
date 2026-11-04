@@ -48,6 +48,12 @@ export const metadata: Metadata = {
 
   description: siteConfig.description,
 
+
+   verification: {
+  google:"TggyYJeClCBvBbliapqmRNmcM4yU11uycysA8KO-C5Y"
+   },
+
+   
   keywords: [
     'Gospel Truth Church',
     'Gospel Truth Church Ethiopia',
@@ -69,6 +75,10 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: '/',
+  },
+
+  verification: {
+    google: 'TggyYJeClCBvBbliapqmRNmcM4yU11uycysA8KO-C5Y',
   },
 
   robots: {
